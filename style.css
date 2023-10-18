@@ -1,0 +1,93 @@
+html {
+    margin: 24px auto;
+}
+
+body {
+    padding: 8px;
+    margin: 0px auto;
+    max-width: 600px;
+}
+
+table {
+    width: auto;
+    height: auto;
+    padding: 8px;
+    margin: 0px auto;
+    border: 1px solid black;
+    border-spacing: 4px;
+}
+
+td {
+    border-top: 1px solid black;
+    padding: 2px 4px;
+    table-layout: auto;
+    width: auto;
+    height: auto;
+    vertical-align: top;
+}
+
+h3,
+h2,
+h1 {
+    font-family: Courier;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p {
+    font-family: Monospace;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.code {
+    width: 180px;
+    min-width: 150px;
+}
+
+.name {
+    width: 100px;
+    min-width: 20px;
+    font-weight: 600;
+    color: green;
+    text-align: center;
+}
+
+.description {
+    min-width: 160px;
+}
+
+.caption {
+    font-size: 14px;
+    font-weight: 1000;
+}
+
+.title {
+    padding: 16x 32px;
+    color: black;
+    line-height: 64px;
+}
+
+.header {
+    border: 1px;
+    color: white;
+    background-color: black;
+}
+
+.tag {
+    text-align: center;
+}
