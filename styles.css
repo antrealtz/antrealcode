@@ -1,11 +1,18 @@
+@font-face {
+    font-family: Roboto;
+    src:
+        local(Roboto)
+        local("Space Mono")
+}
+
 html {
-    margin: 24px auto;
+    margin: 48px auto;
 }
 
 body {
-    padding: 8px;
+    background-color: #E7F2FF;
     margin: 0px auto;
-    max-width: 600px;
+    max-width: 928px;
 }
 
 table {
@@ -18,7 +25,6 @@ table {
 }
 
 td {
-    border-top: 1px solid black;
     padding: 2px 4px;
     table-layout: auto;
     width: auto;
@@ -29,13 +35,13 @@ td {
 h3,
 h2,
 h1 {
-    font-family: Courier;
+    font-family: "Space Mono";
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 48px;
+    line-height: 64px;
     font-weight: 800;
-    text-align: center;
 }
 
 h2 {
@@ -49,9 +55,44 @@ h3 {
 }
 
 p {
-    font-family: Monospace;
+    font-family: roboto;
     font-weight: 400;
     font-size: 16px;
+}
+
+.c {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.career {
+    line-height: 0px;
+    display: inline-block;
+}
+
+.careerTitle {
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    width: 328px;
+    height: 192px;
+    padding: 16px 0px 0px 24px;
+    box-sizing: border-box;
+    line-height: 10px;
+}
+
+.careerName {
+    color: #FFB800;
+    line-height: 64px;
+}
+
+.careerDescription {
+    width: 328px;
+    line-height: 22px;
+    letter-spacing: 0.048em;
 }
 
 .code {
@@ -83,11 +124,17 @@ p {
 }
 
 .header {
-    border: 1px;
     color: white;
+    border: 2px;
+    border-color: black;
     background-color: black;
 }
 
 .tag {
     text-align: center;
+}
+
+.codecademy {
+    width: 120px;
+    height: 24px;
 }
