@@ -95,9 +95,11 @@ a {
     column-gap: 16px;
     text-decoration: none;
     color: black;
+    fill: black;
 }
 
 a:hover {
+    fill: #0075FF;
     color: #0075FF;
 }
 
@@ -277,6 +279,11 @@ h4 {
     padding: 16px 24px 16px 24px;
 }
 
+.open:hover {
+    color: #0075FF;
+    fill: #0075FF;
+}
+
 .closed {
     border: 1px dashed black;
 }
@@ -284,11 +291,6 @@ h4 {
 .challengeTitle {
     height: 88px;
     text-align: left;
-}
-
-.challengeTitle:hover {
-    color: #0075FF;
-    fill: #0075FF;
 }
 
 .challenge:hover{
@@ -315,41 +317,6 @@ h4 {
     flex-grow: 0;
 }
 
-.challengeDifficulty {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-
-    width: 146px;
-    height: 18px;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.stars {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 4px;
-
-    width: 56px;
-    height: 16px;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
 #designSystem
 
 #cheatSheet
