@@ -89,7 +89,6 @@ body {
 }
 
 a {
-    stroke: black;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -99,7 +98,6 @@ a {
 }
 
 a:hover {
-    stroke: #0075FF;
     color: #0075FF;
 }
 
@@ -126,6 +124,12 @@ h4,
 h3,
 h2,
 h1 {
+    margin: 0;
+    flex: content;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    float: left;
     font-family: "Space Mono";
 }
 
@@ -138,7 +142,7 @@ h1 {
 
 p,
 .b {
-    margin: 0 auto;
+    margin: 0;
     font-family: "Roboto";
     font-size: 16px;
     line-height: 22px;
@@ -147,7 +151,6 @@ p,
 }
 
 h1 {
-    margin: 0 auto;
     font-size: 48px;
     line-height: 64px;
     font-weight: 700;
@@ -155,14 +158,12 @@ h1 {
 }
 
 h2 {
-    margin: 0 auto;
     font-size: 36px;
     line-height: 44px;
     font-weight: 700;
 }
 
 h3 {
-    margin: 0 auto;
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
@@ -170,7 +171,6 @@ h3 {
 }
 
 h4 {
-    margin: 0 auto;
     font-size: 24px;
     line-height: 32px;
     font-weight: 400;
@@ -313,13 +313,6 @@ h4 {
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-}
-
-.challengeNumber {
-    background-color: #FFB800;
-    border-radius: 2px;
-    padding: 2px 4px;
-    align-items: center;
 }
 
 .challengeDifficulty {
