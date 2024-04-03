@@ -1,0 +1,410 @@
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: local("Space Mono"),
+    url("../fonts/Space_Mono/SpaceMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: local("Space Mono"),
+    url("../fonts/Space_Mono/SpaceMono-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: local("Space Mono"),
+    url("../fonts/Space_Mono/SpaceMono-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: local("Space Mono"),
+    url("../fonts/Space_Mono/SpaceMono-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+html {
+    padding: 48px 0px;
+    background: #E7F2FF;
+}
+
+header {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    width: 928px;
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+body {
+    margin: 0px auto;
+    max-width: 928px;
+}
+
+.arrow {
+    width: 32px;
+    height: 32px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+    /* Vector 27 */
+
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    left: calc(50% - 16px/2);
+    top: calc(50% - 10px/2);
+
+    border: 2px solid #000000;
+}
+
+a {
+    stroke: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    stroke: #0075FF;
+    color: #0075FF;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    margin: 0px auto;
+    border: 1px solid black;
+    border-spacing: 4px;
+}
+
+td {
+    padding: 2px 4px;
+    table-layout: auto;
+    width: auto;
+    height: auto;
+    vertical-align: top;
+}
+
+h4,
+h3,
+h2,
+h1 {
+    font-family: "Space Mono";
+}
+
+.c,
+.u {
+    font-family: "Space Mono";
+    text-transform: uppercase;
+    letter-spacing: 0.074em;
+}
+
+p,
+.b {
+    margin: 0 auto;
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.048em;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+h4 {
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.c {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.u {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.career {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 328px;
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.careerTitle {
+    display: grid;
+    row-gap: 16px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    height: fit-content;
+    padding: 16px 24px 16px 24px;
+    box-sizing: border-box;
+}
+
+.careerCaption {
+    height: 24px;
+}
+
+.careerProf {
+    height: 128px;
+    color: #FFB800;
+}
+
+.careerDescription {
+    width: 328px;
+    line-height: 22px;
+    letter-spacing: 0.048em;
+}
+
+.student {
+    width: fit-content;
+}
+
+.studentName {
+    font-family: "Space Mono";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.codecademy {
+    width: 125px;
+    height: 27px;
+    fill: black;
+}
+
+.codecademy:hover {
+    fill: #0075FF;
+}
+
+.challenges {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 568px;
+    height: fit-content;
+}
+
+.challenge {
+    box-sizing: border-box;
+    width: fit-content;
+    height: 152px;
+    border: 1px solid black;
+    border-color: black;
+    background-color: white;
+    display: grid;
+    row-gap: 8px;
+    padding: 16px 24px 16px 24px;
+}
+
+.challengeOpen {
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    border: 1px dashed black;
+    border-color: black;
+    background-color: white;
+    display: grid;
+    row-gap: 8px;
+    padding: 16px 24px 16px 24px;
+}
+
+.challengeTitle {
+    height: 88px;
+    text-align: left;
+}
+
+.challengeTitle:hover {
+    color: #0075FF;
+    fill: #0075FF;
+}
+
+.challenge:hover{
+    color: black;
+}
+
+.challengeCaption {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 520px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.challengeNumber {
+    background-color: #FFB800;
+    border-radius: 2px;
+    padding: 2px 4px;
+    align-items: center;
+}
+
+.challengeDifficulty {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 146px;
+    height: 18px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.stars {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+
+    width: 56px;
+    height: 16px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+#designSystem
+
+#cheatSheet
+
+.code {
+    width: 180px;
+    min-width: 150px;
+}
+
+.name {
+    width: 100px;
+    min-width: 20px;
+    font-weight: 600;
+    color: green;
+    text-align: center;
+}
+
+.description {
+    min-width: 160px;
+}
+
+.caption {
+    font-size: 14px;
+    font-weight: 1000;
+}
+
+.title {
+    padding: 16x 32px;
+    color: black;
+    line-height: 64px;
+}
+
+.header {
+    color: white;
+    border: 2px;
+    border-color: black;
+    background-color: black;
+}
+
+.tag {
+    text-align: center;
+}
