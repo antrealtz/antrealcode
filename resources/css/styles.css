@@ -247,7 +247,6 @@ h4 {
 .codecademy {
     width: 125px;
     height: 27px;
-    fill: black;
 }
 
 .codecademy:hover {
@@ -278,16 +277,8 @@ h4 {
     padding: 16px 24px 16px 24px;
 }
 
-.challengeOpen {
-    box-sizing: border-box;
-    width: fit-content;
-    height: fit-content;
+.closed {
     border: 1px dashed black;
-    border-color: black;
-    background-color: white;
-    display: grid;
-    row-gap: 8px;
-    padding: 16px 24px 16px 24px;
 }
 
 .challengeTitle {
