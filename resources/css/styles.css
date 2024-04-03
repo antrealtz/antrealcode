@@ -44,21 +44,13 @@ html {
 }
 
 header {
-    /* Auto layout */
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     padding: 0px;
     gap: 32px;
 
     width: 928px;
     height: fit-content;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 body {
@@ -69,15 +61,6 @@ body {
 .arrow {
     width: 32px;
     height: 32px;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-
-    /* Vector 27 */
 
     position: absolute;
     width: 16px;
@@ -192,7 +175,6 @@ h4 {
 }
 
 .career {
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -200,13 +182,11 @@ h4 {
     gap: 16px;
 
     width: 328px;
-    height: fit-content;
+    height: 100%;
+}
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.fixed {
+    position: fixed;
 }
 
 .careerTitle {
@@ -256,7 +236,6 @@ h4 {
 }
 
 .challenges {
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -265,6 +244,10 @@ h4 {
 
     width: 568px;
     height: fit-content;
+}
+
+.margin360 {
+    margin-left: 360px;
 }
 
 .challenge {
@@ -298,7 +281,6 @@ h4 {
 }
 
 .challengeCaption {
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -308,13 +290,6 @@ h4 {
 
     width: 520px;
     height: 24px;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 #designSystem
