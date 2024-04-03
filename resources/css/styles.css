@@ -39,8 +39,11 @@
 }
 
 html {
-    padding: 48px 0px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    row-gap: 48px;
     background: #E7F2FF;
+    width: 100%;
 }
 
 header {
@@ -58,33 +61,6 @@ body {
     max-width: 928px;
 }
 
-.arrow {
-    width: 32px;
-    height: 32px;
-
-    position: absolute;
-    width: 16px;
-    height: 10px;
-    left: calc(50% - 16px/2);
-    top: calc(50% - 10px/2);
-
-    border: 2px solid #000000;
-}
-
-a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 16px;
-    text-decoration: none;
-    color: black;
-    fill: black;
-}
-
-a:hover {
-    fill: #0075FF;
-    color: #0075FF;
-}
 
 table {
     display: flex;
@@ -110,11 +86,6 @@ h3,
 h2,
 h1 {
     margin: 0;
-    flex: content;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    float: left;
     font-family: "Space Mono";
 }
 
@@ -233,6 +204,10 @@ h4 {
 
 .codecademy:hover {
     fill: #0075FF;
+}
+
+.arrow:hover {
+    stroke: #0075FF;
 }
 
 .challenges {
