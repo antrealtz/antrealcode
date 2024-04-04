@@ -100,8 +100,7 @@ h1 {
     letter-spacing: 0.074em;
 }
 
-p,
-.b {
+p {
     margin: 0;
     font-family: "Roboto";
     font-size: 16px;
@@ -302,13 +301,17 @@ table {
     padding: 8px;
     margin: 0px auto;
     border: 1px solid black;
-    border-spacing: 4px;
 }
 
+th,
 td {
-    padding: 2px 4px;
-    table-layout: auto;
+    padding: 16px 24px;
     width: auto;
-    height: auto;
-    vertical-align: top;
+    min-width: 140px;
+    text-align: left;
+}
+
+th {
+    color: #FFB800;
+    background-color: black;
 }
