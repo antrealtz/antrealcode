@@ -149,6 +149,10 @@ h4 {
     font-weight: 400;
 }
 
+.u:hover {
+    text-decoration: none;
+}
+
 .title {
     box-sizing: border-box;
     justify-content: stretch;
@@ -166,6 +170,12 @@ h4 {
 .content {
     display: grid;
     row-gap: 8px;
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
 }
 
 /* Career Path */

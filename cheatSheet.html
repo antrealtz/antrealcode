@@ -30,12 +30,18 @@
             <div class="challengeCaption">
                 <span class="c">Improved Styling with CSS</span>
             </div>
-            <span><h2>2.Build Your Own<br> Cheat Sheet</h2></span>
+            <span><h2>1.Build Your Own<br> Cheat Sheet</h2></span>
         </div>
     </div>
 </header>
 
 <main>
+    <!-- Breadcrumbs
+    <div class="breadcrumbs">
+        <a class="u" href="./index.html">Front-End Engineer</a>/<p class="c">Cheat Sheet</p>
+    </div>
+-->
+
     <div class="task">
         <div class="content">
             <h3>Overview</h3>
@@ -47,128 +53,135 @@
         </div>
     </div>
 
-    <div class="title closed"><h2>HTML Form Cheat Sheet</h2></div>
-    <p>The purpose of a <b>&lt;form&gt;</b> is to allow users to input information and send it.</p>
+    <!-- Page title -->
+    <div class="content">
+        <div class="title closed"><h2>HTML Form Cheat Sheet</h2></div>
+        <p>The purpose of a <b>&lt;form&gt;</b> is to allow users to input information and send it.</p>
+    </div>
 
     <!-- HTML Forms attributes -->
-    <h3 class="title closed">HTML Form attributes</h3>
-    <table>
-        <thead>
-            <th>
-                <p class="c">Attributes</p>
-            </th>
-            <th>
-                <p class="c">Name</p>
-            </th>
-            <th style="width: 100%;">
-                <p class="c">Description</p>
-            </th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <p class="c">&lt;form action=""&gt;</p>
-                </td>
-                <td>
-                    <p><b>Action</b></p>
-                </td>
-                <td>
-                    <p>Determines where the form’s information goes.</p>
-                </td>
-            </tr>
+    <div class="content">
+        <h3 class="title closed">HTML Form attributes</h3>
+        <table>
+            <thead>
+                <th>
+                    <p class="c">Attributes</p>
+                </th>
+                <th>
+                    <p class="c">Name</p>
+                </th>
+                <th style="width: 100%;">
+                    <p class="c">Description</p>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="c">&lt;form action=""&gt;</p>
+                    </td>
+                    <td>
+                        <p><b>Action</b></p>
+                    </td>
+                    <td>
+                        <p>Determines where the form’s information goes.</p>
+                    </td>
+                </tr>
 
-            <tr>
-                <td>
-                    <p class="c">&lt;form method=""&gt;</p>
-                </td>
-                <td>
-                    <p><b>Method</b></p>
-                </td>
-                <td>
-                    <p>Determines how the information is sent and processed.</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                <tr>
+                    <td>
+                        <p class="c">&lt;form method=""&gt;</p>
+                    </td>
+                    <td>
+                        <p><b>Method</b></p>
+                    </td>
+                    <td>
+                        <p>Determines how the information is sent and processed.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <!-- HTML Form elements -->
-    <h3 class="title closed">HTML Form elements</h3>
-    <table>
-        <thead>
-            <th>
-                <p class="c">Tag</p>
-            </th>
-            <th>
-                <p class="c">Name</p>
-            </th>
-            <th style="width: 100%;">
-                <p class="c">Description</p>
-            </th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <p class="c">&lt;input&gt;</p>
-                </td>
-                <td>
-                    <p><b>Input</b></p>
-                </td>
-                <td>
-                    <p>Used to create interactive controls for web-based forms in order to accept data from the user</p>
-                </td>
-            </tr>
+    <div class="content">
+        <h3 class="title closed">HTML Form elements</h3>
+        <table>
+            <thead>
+                <th>
+                    <p class="c">Tag</p>
+                </th>
+                <th>
+                    <p class="c">Name</p>
+                </th>
+                <th style="width: 100%;">
+                    <p class="c">Description</p>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="c">&lt;input&gt;</p>
+                    </td>
+                    <td>
+                        <p><b>Input</b></p>
+                    </td>
+                    <td>
+                        <p>Used to create interactive controls for web-based forms in order to accept data from the user</p>
+                    </td>
+                </tr>
 
-            <tr>
-                <td>
-                    <p class="c">&lt;select&gt;</p>
-                </td>
-                <td>
-                    <p><b>Select</b></p>
-                </td>
-                <td>
-                    <p>Represents a control that provides a menu of <b>&lt;options&gt;</b>.</p>
-                </td>
-            </tr>
+                <tr>
+                    <td>
+                        <p class="c">&lt;select&gt;</p>
+                    </td>
+                    <td>
+                        <p><b>Select</b></p>
+                    </td>
+                    <td>
+                        <p>Represents a control that provides a menu of <b>&lt;options&gt;</b>.</p>
+                    </td>
+                </tr>
 
-            <tr>
-                <td>
-                    <p class="c">&lt;datalist&gt;</p>
-                </td>
-                <td>
-                    <p><b>Datalist</b></p>
-                </td>
-                <td>
-                    <p>Contains a set of <b>&lt;option&gt;</b> elements that represent the permissible or recommended
-                        options available to choose from within other controls.</p>
-                </td>
-            </tr>
+                <tr>
+                    <td>
+                        <p class="c">&lt;datalist&gt;</p>
+                    </td>
+                    <td>
+                        <p><b>Datalist</b></p>
+                    </td>
+                    <td>
+                        <p>Contains a set of <b>&lt;option&gt;</b> elements that represent the permissible or recommended
+                            options available to choose from within other controls.</p>
+                    </td>
+                </tr>
 
-            <tr>
-                <td>
-                    <p class="c">&lt;option&gt;</p>
-                </td>
-                <td>
-                    <p><b>Option</b></p>
-                </td>
-                <td>
-                    <p>Used to define an item contained in <b>&lt;select&gt;</b> and <b>&lt;datalist&gt;</b></p>
-                </td>
-            </tr>
+                <tr>
+                    <td>
+                        <p class="c">&lt;option&gt;</p>
+                    </td>
+                    <td>
+                        <p><b>Option</b></p>
+                    </td>
+                    <td>
+                        <p>Used to define an item contained in <b>&lt;select&gt;</b> and <b>&lt;datalist&gt;</b></p>
+                    </td>
+                </tr>
 
-            <tr>
-                <td>
-                    <p class="c">&lt;textarea&gt;</p>
-                </td>
-                <td>
-                    <p><b>Text area<b></p>
-                </td>
-                <td>
-                    <p>Represents a multi-line plain-text editing control, useful when you want to allow users to enter
-                        a sizeable amount of free-form text, for example a comment on a review or feedback form.</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                <tr>
+                    <td>
+                        <p class="c">&lt;textarea&gt;</p>
+                    </td>
+                    <td>
+                        <p><b>Text area<b></p>
+                    </td>
+                    <td>
+                        <p>Represents a multi-line plain-text editing control, useful when you want to allow users to enter
+                            a sizeable amount of free-form text, for example a comment on a review or feedback form.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </main>
 
 <footer>
