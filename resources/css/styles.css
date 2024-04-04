@@ -339,13 +339,11 @@ th {
     flex-direction: row;
     column-gap: 8px;
     row-gap: 16px;
-    height: 94px;
 }
 
 .lineLeft {
     display: flex;
     flex-direction: column;
-    row-gap: 8px;
     width: 328px;
 }
 
@@ -362,6 +360,26 @@ th {
     flex-direction: column;
     vertical-align: top;
     flex-grow: 1;
-    row-gap: 8px;
     border-radius: 4px;
+}
+
+.lineFont {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.fontSpaceMono {
+    font-family: "Space Mono";
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.gap4 {
+    gap: 4px;
+}
+
+.gap8 {
+    gap: 8px;
 }
