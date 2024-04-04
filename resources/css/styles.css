@@ -206,8 +206,39 @@ h4 {
     fill: #0075FF;
 }
 
-.arrow:hover {
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    width: 32px;
+    height: 32px;
+}
+
+.arrowBack {
+    width: 16px;
+    height: 12px;
+}
+
+.challengeList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    stroke: black;
+    column-gap: 16px;
+}
+
+.challengeList:hover {
     stroke: #0075FF;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0075FF;
 }
 
 .challenges {
@@ -249,10 +280,6 @@ h4 {
 .challengeTitle {
     height: 88px;
     text-align: left;
-}
-
-.challenge:hover{
-    color: black;
 }
 
 .challengeCaption {
