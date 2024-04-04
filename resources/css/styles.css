@@ -38,12 +38,33 @@
     font-style: italic;
 }
 
+/* Basics */
+
 html {
     padding-top: 48px;
     padding-bottom: 48px;
-    row-gap: 48px;
     background: #E7F2FF;
     width: 100%;
+}
+
+body {
+    display: grid;
+    row-gap: 48px;
+    margin: 0px auto;
+    max-width: 928px;
+}
+
+main {
+    display: grid;
+    row-gap: 32px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 928px;
 }
 
 header {
@@ -51,34 +72,16 @@ header {
     flex-direction: row;
     padding: 0px;
     gap: 32px;
-
-    width: 928px;
     height: fit-content;
 }
 
-body {
-    margin: 0px auto;
-    max-width: 928px;
+a {
+    color: black;
+    text-decoration: none;
 }
 
-
-table {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    padding: 8px;
-    margin: 0px auto;
-    border: 1px solid black;
-    border-spacing: 4px;
-}
-
-td {
-    padding: 2px 4px;
-    table-layout: auto;
-    width: auto;
-    height: auto;
-    vertical-align: top;
+a:hover {
+    color: #0075FF;
 }
 
 h4,
@@ -91,6 +94,7 @@ h1 {
 
 .c,
 .u {
+    margin: 0;
     font-family: "Space Mono";
     text-transform: uppercase;
     letter-spacing: 0.074em;
@@ -140,10 +144,32 @@ h4 {
 }
 
 .u {
+    text-decoration: underline;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
 }
+
+.title {
+    box-sizing: border-box;
+    justify-content: stretch;
+    border: 1px solid black;
+    border-color: black;
+    background-color: white;
+    padding: 16px 24px;
+}
+
+.task {
+    display: grid;
+    row-gap: 16px;
+}
+
+.content {
+    display: grid;
+    row-gap: 8px;
+}
+
+/* Career Path */
 
 .career {
     display: flex;
@@ -167,7 +193,7 @@ h4 {
     background-color: black;
     color: white;
     height: fit-content;
-    padding: 16px 24px 16px 24px;
+    padding: 16px 24px;
     box-sizing: border-box;
 }
 
@@ -176,18 +202,12 @@ h4 {
 }
 
 .careerProf {
-    height: 128px;
     color: #FFB800;
 }
 
-.careerDescription {
-    width: 328px;
-    line-height: 22px;
-    letter-spacing: 0.048em;
-}
-
-.student {
-    width: fit-content;
+.careerDescription .student {
+    width: 100%;
+    height: fit-content;
 }
 
 .studentName {
@@ -206,18 +226,33 @@ h4 {
     fill: #0075FF;
 }
 
+/* Challenges */
+
+.challenges {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 568px;
+    height: fit-content;
+}
+
+.margin360 {
+    margin-left: 360px;
+}
+
 .arrow {
+    width: 16px;
+    height: 12px;
+}
+
+.arrowBox {
     display: flex;
     align-items: center;
     justify-content: center;
     transform: rotate(90deg);
     width: 32px;
     height: 32px;
-}
-
-.arrowBack {
-    width: 16px;
-    height: 12px;
 }
 
 .challengeList {
@@ -232,40 +267,12 @@ h4 {
     stroke: #0075FF;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0075FF;
-}
-
-.challenges {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-
-    width: 568px;
-    height: fit-content;
-}
-
-.margin360 {
-    margin-left: 360px;
-}
+/* Challenge Frame */
 
 .challenge {
-    box-sizing: border-box;
-    width: fit-content;
     height: 152px;
-    border: 1px solid black;
-    border-color: black;
-    background-color: white;
     display: grid;
     row-gap: 8px;
-    padding: 16px 24px 16px 24px;
 }
 
 .open:hover {
@@ -283,56 +290,25 @@ a:hover {
 }
 
 .challengeCaption {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-
     width: 520px;
     height: 24px;
 }
 
-#designSystem
-
-#cheatSheet
-
-.code {
-    width: 180px;
-    min-width: 150px;
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 100%;
+    padding: 8px;
+    margin: 0px auto;
+    border: 1px solid black;
+    border-spacing: 4px;
 }
 
-.name {
-    width: 100px;
-    min-width: 20px;
-    font-weight: 600;
-    color: green;
-    text-align: center;
-}
-
-.description {
-    min-width: 160px;
-}
-
-.caption {
-    font-size: 14px;
-    font-weight: 1000;
-}
-
-.title {
-    padding: 16x 32px;
-    color: black;
-    line-height: 64px;
-}
-
-.header {
-    color: white;
-    border: 2px;
-    border-color: black;
-    background-color: black;
-}
-
-.tag {
-    text-align: center;
+td {
+    padding: 2px 4px;
+    table-layout: auto;
+    width: auto;
+    height: auto;
+    vertical-align: top;
 }
