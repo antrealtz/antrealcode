@@ -9,18 +9,16 @@
 </head>
 
 <header>
-    <div class="career">
-        <div class="careerTitle">
+    <div class="career flex-col gap-row-16">
+        <div class="careerTitle flex-col gap-row-16 padding border color-bg-black">
             <div class="careerCaption c">Career path</div>
-            <div class="careerProf">
-                <h1>Front-End Engineer</h1>
-            </div>
+            <div class="careerProf"><h1>Front-End Engineer</h1></div>
         </div>
     </div>
-    <div class="challenges">
-        <a class="challengeList" href="./index.html">
+    <div class="challenges flex-col gap-row-16 ">
+        <a class="challengeList flex-row gap-col-16" href="./index.html">
             <div class="arrowBox">
-                <svg class="arrow" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="arrow" viewBox="0 0 16 12" fill="none">
                     <path d="M2 2L8 10L14 2" stroke-width="2" stroke-linecap="square"/>
                 </svg>
             </div>
@@ -42,108 +40,144 @@
     </div>
 -->
 
-    <div class="part">
-        <div class="content">
+    <div class="flex-col gap-row-16">
+        <div class="flex-col gap-row-8">
             <h3>Overview</h3>
             <p>This project is slightly different than others you have encountered thus  far on Codecademy. Instead of a step-by-step tutorial, this project  contains a series of open-ended requirements which describe the project  you’ll be building. There are many possible ways to correctly fulfill  all of these requirements, and you should expect to use the internet,  Codecademy, and other resources when you encounter a problem that you  cannot easily solve.</p>
         </div>
-        <div class="content">
+        <div class="flex-col gap-row-8">
             <h3>Project Goals</h3>
             <p>In this project, you’ll be building your own basic design system for a  website. In essence, you’ll be building a website to help you build MORE  websites in the future! On your site, you’ll collect all the colors,  fonts, and some of the repeating styles.</p>
         </div>
     </div>
 
     <!-- Colors -->
-    <div class="part">
+    <div class="flex-col gap-row-16">
         <div class="title padding closed"><h2>Colors</h2></div>
-        <div class="line">
-            <div class="lineLeft padding gap8">
+        <div class="flex-row gap-col-8 gap-row-16">
+            <div class="lineLeft flex-col padding gap-row-8">
                 <h4>Neutral</h4>
                 <p>Main visual</p>
             </div>
-            <div class="lineRight">
-                <div class="color padding gap8" style="background-color: black;">
-                    <p class="c" style="color: white;">black</p>
-                    <p style="color: white;">#000000</p>
+            <div class="lineRight flex-row gap-col-8">
+                <div class="color flex-col padding gap-row-8 border color-bg-black">
+                    <p class="c color-white">black</p>
+                    <p class="color-white">#000000</p>
                 </div>
-                <div class="color padding gap8" style="background-color: white;">
+                <div class="color flex-col padding gap-row-8 border color-bg-white">
                     <p class="c">white</p>
                     <p>#FFFFFF</p>
                 </div>
             </div>
         </div>
-        <div class="line">
-            <div class="lineLeft padding gap8">
+        <div class="flex-row gap-col-8 gap-row-16">
+            <div class="lineLeft flex-col padding gap-row-8">
                 <h4>Primary</h4>
                 <p>CTA</p>
             </div>
-            <div class="color padding gap8" style="background-color: #0075FF;">
-                    <p class="c" style="color: white;">Primary</p>
-                    <p style="color: white;">#0075FF</p>
+            <div class="color flex-col padding gap-row-8 border color-bg-primary">
+                    <p class="c color-white">Primary</p>
+                    <p class="color-white">#0075FF</p>
             </div>
         </div>
-        <div class="line">
-            <div class="lineLeft padding gap8">
+        <div class="flex-row gap-col-8 gap-row-16">
+            <div class="lineLeft flex-col padding gap-row-8">
                 <h4>Secondary</h4>
                 <p>Importance</p>
             </div>
-            <div class="color padding gap8" style="background-color: #FFB800;">
-                    <p class="c" style="color: black;">Secondary</p>
-                    <p style="color: black;">#FFB800</p>
+            <div class="color flex-col padding gap-row-8 border color-bg-secondary">
+                    <p class="c">Secondary</p>
+                    <p>#FFB800</p>
             </div>
         </div>
-        <div class="line">
-            <div class="lineLeft padding gap8">
+        <div class="flex-row gap-col-8 gap-row-16">
+            <div class="lineLeft flex-col padding gap-row-8">
                 <h4>Success</h4>
                 <p>Completed, done</p>
             </div>
-            <div class="color padding gap8" style="background-color: #00A52F;">
-                    <p class="c" style="color: white;">Green</p>
-                    <p style="color: white;">#00A52F</p>
+            <div class="color flex-col padding gap-row-8 border color-bg-success">
+                    <p class="c color-white">Green</p>
+                    <p class="color-white">#00A52F</p>
             </div>
         </div>
-        <div class="line">
-            <div class="lineLeft padding gap8">
+        <div class="flex-row gap-col-8 gap-row-16">
+            <div class="lineLeft flex-col padding gap-row-8">
                 <h4>Error</h4>
                 <p>Mistakes, wrong input</p>
             </div>
-            <div class="color padding gap8" style="background-color: #D90000;">
-                    <p class="c" style="color: white;">Red</p>
-                    <p style="color: white;">#D90000</p>
+            <div class="color flex-col padding gap-row-8 border color-bg-error">
+                    <p class="c color-white">Red</p>
+                    <p class="color-white">#D90000</p>
             </div>
         </div>
     </div>
 
     <!-- Fonts -->
-    <div class="part">
+    <div class="flex-col gap-row-16">
         <div class="title padding closed"><h2>Fonts</h2></div>
-        <div class="line">
-            <div class="lineLeft padding gap8">
+
+        <!-- Space Mono -->
+        <div class="flex-row gap-col-8 gap-row-16">
+            <div class="lineLeft flex-col padding gap8">
                 <h4>Space Mono</h4>
                 <p>Title, subtitles, captions</p>
             </div>
-            <div style="display: flex; flex-direction: column; row-gap: 8px;">
-                <div class="color gap4">
-                        <p class="c">regular</p>
-                        <p class="lineFont padding fontSpaceMono">The quick brown fox jumps over the lazy dog.</p>
-                </div>
-                <div class="color gap4">
+            <div class="lineRight flex-col gap-row-8">
+                <div class="color flex-col gap-row-4 border">
                     <p class="c">regular</p>
                     <p class="lineFont padding fontSpaceMono">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="color flex-col gap-row-4 border">
+                    <p class="c">italic</p>
+                    <p class="lineFont padding fontSpaceMono"><em>The quick brown fox jumps over the lazy dog.</em></p>
+                </div>
+                <div class="color flex-col gap-row-4 border">
+                    <p class="c">bold</p>
+                    <p class="lineFont padding fontSpaceMono"><b>The quick brown fox jumps over the lazy dog.</b></p>
+                </div>
+                <div class="color flex-col gap-row-4 border">
+                    <p class="c">bold italic</p>
+                    <p class="lineFont padding fontSpaceMono"><b><em>The quick brown fox jumps over the lazy dog.</em></b></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Roboto -->
+        <div class="flex-row gap-col-8 gap-row-16">
+            <div class="lineLeft flex-col padding gap8">
+                <h4>Roboto</h4>
+                <p>Content, descriptions</p>
+            </div>
+            <div class="lineRight flex-col gap-row-8">
+                <div class="color flex-col gap-row-4 border">
+                    <p class="c">regular</p>
+                    <p class="lineFont padding fontRoboto">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="color flex-col gap-row-4 border">
+                    <p class="c">italic</p>
+                    <p class="lineFont padding fontRoboto"><em>The quick brown fox jumps over the lazy dog.</em></p>
+                </div>
+                <div class="color flex-col gap-row-4 border">
+                    <p class="c">bold</p>
+                    <p class="lineFont padding fontRoboto"><b>The quick brown fox jumps over the lazy dog.</b></p>
+                </div>
+                <div class="color flex-col gap-row-4 border">
+                    <p class="c">bold italic</p>
+                    <p class="lineFont padding fontRoboto"><b><em>The quick brown fox jumps over the lazy dog.</em></b></p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Typography -->
-    <div class="part">
+    <div class="flex-col gap-row-16">
         <div class="title padding closed"><h2>Typography</h2></div>
     </div>
 
 </main>
 
 <footer>
-    <div class="content">
+    <div class="flex-col gap-row-8">
         <div class="student">
             <p>Student <span class="studentName">@Antreal</span></p>
         </div>

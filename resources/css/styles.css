@@ -162,39 +162,18 @@ h4 {
     background-color: white;
 }
 
-.part {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-}
-
-.content {
-    display: grid;
-    row-gap: 8px;
-}
-
 .breadcrumbs {
     display: flex;
     flex-direction: row;
     column-gap: 8px;
 }
 
-.padding {
-    box-sizing: border-box;
-    padding: 16px 24px;
-}
-
 /* Career Path */
 
 .career {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-
     width: 328px;
-    height: 100%;
+    height: fit-content;
 }
 
 .fixed {
@@ -202,14 +181,8 @@ h4 {
 }
 
 .careerTitle {
-    display: grid;
-    row-gap: 16px;
-    border-radius: 4px;
-    background-color: black;
     color: white;
     height: fit-content;
-    padding: 16px 24px;
-    box-sizing: border-box;
 }
 
 .careerCaption {
@@ -244,10 +217,7 @@ h4 {
 /* Challenges */
 
 .challenges {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
     width: 568px;
     height: fit-content;
 }
@@ -271,23 +241,18 @@ h4 {
 }
 
 .challengeList {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     stroke: black;
-    column-gap: 16px;
 }
 
 .challengeList:hover {
     stroke: #0075FF;
 }
 
-/* Challenge Frame */
+/* Challenges */
 
 .challenge {
     height: 152px;
-    display: grid;
-    row-gap: 8px;
 }
 
 .open:hover {
@@ -310,11 +275,8 @@ h4 {
 }
 
 table {
-    display: flex;
-    flex-direction: column;
     justify-content: stretch;
     width: 100%;
-    padding: 8px;
     margin: 0px auto;
     border: 1px solid black;
 }
@@ -334,38 +296,21 @@ th {
 
 /* Design system */
 
-.line {
-    display: flex;
-    flex-direction: row;
-    column-gap: 8px;
-    row-gap: 16px;
-}
-
 .lineLeft {
-    display: flex;
-    flex-direction: column;
     width: 328px;
 }
 
 .lineRight {
-    display: flex;
-    flex-direction: row;
-    column-gap: 8px;
     flex-grow: 1;
 }
 
 .color {
     justify-content: stretch;
-    display: flex;
-    flex-direction: column;
     vertical-align: top;
     flex-grow: 1;
-    border-radius: 4px;
 }
 
 .lineFont {
-    display: flex;
-    flex-direction: column;
     background-color: white;
     border-radius: 4px;
 }
@@ -376,10 +321,101 @@ th {
     letter-spacing: 0.12em;
 }
 
-.gap4 {
-    gap: 4px;
+.fontRoboto {
+    font-family: Roboto;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
 }
 
-.gap8 {
-    gap: 8px;
+/* Variables */
+
+.padding {
+    box-sizing: border-box;
+    padding: 16px 24px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.border {
+    border-radius: 4px;
+}
+
+.gap-col-4 {
+    column-gap: 4px;
+}
+
+.gap-col-8 {
+    column-gap: 8px;
+}
+
+.gap-col-16 {
+    column-gap: 16px;
+}
+
+.gap-row-4 {
+    row-gap: 4px;
+}
+
+.gap-row-8 {
+    row-gap: 8px;
+}
+
+.gap-row-16 {
+    row-gap: 16px;
+}
+
+.color-black {
+    color: black;
+}
+
+.color-white {
+    color: white
+}
+
+.color-primary {
+    color: #0075FF;
+}
+
+.color-secondary {
+    color: #FFB800;
+}
+
+.color-success {
+    color: #00A52F;
+}
+
+.color-error {
+    color: #D90000;
+}
+
+.color-bg-black {
+    background-color: black;
+}
+
+.color-bg-white {
+    background-color: white;
+}
+
+.color-bg-primary {
+    background-color: #0075FF;
+}
+
+.color-bg-secondary {
+    background-color: #FFB800;
+}
+
+.color-bg-success {
+    background-color: #00A52F;
+}
+
+.color-bg-error {
+    background-color: #D90000;
 }
