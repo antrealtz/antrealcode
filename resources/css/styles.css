@@ -55,6 +55,7 @@ body {
 }
 
 main {
+    box-sizing: border-box;
     display: grid;
     row-gap: 32px;
 }
@@ -159,11 +160,11 @@ h4 {
     border: 1px solid black;
     border-color: black;
     background-color: white;
-    padding: 16px 24px;
 }
 
-.task {
-    display: grid;
+.part {
+    display: flex;
+    flex-direction: column;
     row-gap: 16px;
 }
 
@@ -176,6 +177,11 @@ h4 {
     display: flex;
     flex-direction: row;
     column-gap: 8px;
+}
+
+.padding {
+    box-sizing: border-box;
+    padding: 16px 24px;
 }
 
 /* Career Path */
@@ -324,4 +330,38 @@ td {
 th {
     color: #FFB800;
     background-color: black;
+}
+
+/* Design system */
+
+.line {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    row-gap: 16px;
+    height: 94px;
+}
+
+.lineLeft {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 328px;
+}
+
+.lineRight {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    flex-grow: 1;
+}
+
+.color {
+    justify-content: stretch;
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    flex-grow: 1;
+    row-gap: 8px;
+    border-radius: 4px;
 }
