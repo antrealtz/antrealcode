@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     src: local("Roboto"), local("Roboto-Regular"),
     url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
     font-weight: 400;
@@ -7,32 +7,32 @@
 }
 
 @font-face {
-    font-family: "Space Mono";
-    src: local("Space Mono"),
+    font-family: 'Space Mono';
+    src: local('Space Mono'),
     url("../fonts/Space_Mono/SpaceMono-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Space Mono";
-    src: local("Space Mono"),
+    font-family: 'Space Mono';
+    src: local('Space Mono'),
     url("../fonts/Space_Mono/SpaceMono-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Space Mono";
-    src: local("Space Mono"),
+    font-family: 'Space Mono';
+    src: local('Space Mono'),
     url("../fonts/Space_Mono/SpaceMono-Italic.ttf") format("truetype");
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Space Mono";
-    src: local("Space Mono"),
+    font-family: 'Space Mono';
+    src: local('Space Mono'),
     url("../fonts/Space_Mono/SpaceMono-BoldItalic.ttf") format("truetype");
     font-weight: 700;
     font-style: italic;
@@ -90,20 +90,20 @@ h3,
 h2,
 h1 {
     margin: 0;
-    font-family: "Space Mono";
+    font-family: 'Space Mono', 'Courier New', Courier, monospace;
 }
 
 .c,
 .u {
     margin: 0;
-    font-family: "Space Mono";
+    font-family: 'Space Mono', 'Courier New', Courier, monospace;
     text-transform: uppercase;
     letter-spacing: 0.074em;
 }
 
 p {
     margin: 0;
-    font-family: "Roboto";
+    font-family: 'Roboto', Tahoma, Verdana, sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
@@ -199,7 +199,7 @@ h4 {
 }
 
 .studentName {
-    font-family: "Space Mono";
+    font-family: 'Space Mono', 'Courier New', Courier, monospace;
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
@@ -316,13 +316,13 @@ th {
 }
 
 .fontSpaceMono {
-    font-family: "Space Mono";
+    font-family: 'Space Mono';
     text-transform: uppercase;
     letter-spacing: 0.12em;
 }
 
 .fontRoboto {
-    font-family: Roboto;
+    font-family: 'Roboto';
     text-transform: uppercase;
     letter-spacing: 0.12em;
 }
