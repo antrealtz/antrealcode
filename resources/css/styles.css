@@ -43,7 +43,7 @@
 html {
     padding-top: 48px;
     padding-bottom: 48px;
-    background: #E7F2FF;
+    background: #FAF6ED;
     width: 100%;
 }
 
@@ -148,10 +148,6 @@ h4 {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
-}
-
-.u:hover {
-    text-decoration: none;
 }
 
 .title {
