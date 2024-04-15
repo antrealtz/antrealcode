@@ -1,0 +1,50 @@
+html {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Logo */
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo .content {
+    width: 4rem;
+}
+
+/* Features */
+
+.features {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.features .feature {
+    margin-top: 2rem;
+    display: inline-flex;
+    gap: 2rem;
+}
+
+/* Team */
+
+.team {
+    display: block;
+    text-align: center;
+}
+
+.team .teamList {
+    margin-top: 2rem;
+    display: inline-flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.team .teamList .member
