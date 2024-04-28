@@ -41,14 +41,15 @@
 /* Basics */
 
 html {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 48px 0px 48px 0px;
     background: #FAF6ED;
     width: 100%;
 }
 
 body {
-    display: grid;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
     row-gap: 48px;
     margin: 0px auto;
     max-width: 928px;
@@ -88,7 +89,8 @@ a:hover {
 h4,
 h3,
 h2,
-h1 {
+h1,
+a {
     margin: 0;
     font-family: 'Space Mono', 'Courier New', Courier, monospace;
 }
@@ -168,8 +170,7 @@ h4 {
 
 .career {
     align-items: flex-start;
-    width: 328px;
-    height: fit-content;
+    min-width: 328px;
 }
 
 .fixed {
@@ -178,7 +179,7 @@ h4 {
 
 .careerTitle {
     color: white;
-    height: fit-content;
+    height: 100%;
 }
 
 .careerCaption {
@@ -214,8 +215,7 @@ h4 {
 
 .challenges {
     align-items: flex-start;
-    width: 568px;
-    height: fit-content;
+    max-width: 568px;
 }
 
 .margin360 {
@@ -245,10 +245,12 @@ h4 {
     stroke: #0075FF;
 }
 
-/* Challenges */
+/* Challenge */
 
 .challenge {
-    height: 152px;
+    display: flex;
+    flex-direction: column;
+    min-height: 152px;
 }
 
 .open:hover {
@@ -266,7 +268,7 @@ h4 {
 }
 
 .challengeCaption {
-    width: 520px;
+    max-width: 520px;
     height: 24px;
 }
 

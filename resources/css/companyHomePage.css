@@ -5,18 +5,41 @@ html {
 img {
     width: 100%;
     height: auto;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    column-gap: 1rem;
+}
+
+a {
+    cursor: pointer;
+}
+
+.block {
+    padding: 4rem;
+}
+
+.bg {
+    background-color: white;
+    border-radius: .25rem;
 }
 
 /* Logo */
 
 .logo {
     display: inline-flex;
-    align-items: center;
+    align-items: start;
     gap: 2rem;
 }
 
 .logo .content {
-    width: 4rem;
+    width: 8rem;
 }
 
 /* Features */
@@ -47,4 +70,7 @@ img {
     gap: 2rem;
 }
 
-.team .teamList .member
+.team .teamList .member {
+    height: 100%;
+    width: auto;
+}
