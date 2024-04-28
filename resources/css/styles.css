@@ -41,24 +41,19 @@
 /* Basics */
 
 html {
-    padding: 48px 0px 48px 0px;
     background: #FAF6ED;
     width: 100%;
+    font-size: 16px;
 }
 
 body {
     padding: 24px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 48px;
     margin: 0px auto;
     max-width: 928px;
 }
 
 main {
     box-sizing: border-box;
-    display: grid;
-    row-gap: 32px;
 }
 
 footer {
@@ -75,14 +70,6 @@ header {
     padding: 0px;
     gap: 32px;
     height: fit-content;
-}
-
-@media only screen and (max-width: 800px) {
-
-    header {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 a {
@@ -161,10 +148,8 @@ h4 {
 }
 
 .title {
-    box-sizing: border-box;
     justify-content: stretch;
     border: 1px solid black;
-    border-color: black;
     background-color: white;
 }
 
@@ -177,8 +162,7 @@ h4 {
 /* Career Path */
 
 .career {
-    align-items: flex-start;
-    min-width: 328px;
+    max-width: 100%;
 }
 
 .fixed {
@@ -224,10 +208,7 @@ h4 {
 
 .challenges {
     align-items: flex-start;
-}
-
-.margin360 {
-    margin-left: 360px;
+    min-width: 50%;
 }
 
 .arrow {
@@ -247,7 +228,6 @@ h4 {
 .challengeList {
     align-items: center;
     stroke: black;
-    min-width: 320px;
 }
 
 .challengeList:hover {
@@ -257,9 +237,8 @@ h4 {
 /* Challenge */
 
 .challenge {
-    display: flex;
-    flex-direction: column;
-    min-height: 152px;
+    width: 100%;
+    height: 100%;
 }
 
 .open:hover {
@@ -272,7 +251,7 @@ h4 {
 }
 
 .challengeTitle {
-    height: 88px;
+    min-height: 88px;
     text-align: left;
 }
 
@@ -290,7 +269,7 @@ table {
 
 th,
 td {
-    padding: 16px 24px;
+    padding: 1rem 1.25rem;
     width: auto;
     min-width: 140px;
     text-align: left;
@@ -319,7 +298,7 @@ th {
 
 .lineFont {
     background-color: white;
-    border-radius: 4px;
+    border-radius: .25rem;
 }
 
 .fontSpaceMono {
@@ -338,7 +317,7 @@ th {
 
 .padding {
     box-sizing: border-box;
-    padding: 16px 24px;
+    padding: 1rem 1.25rem;
 }
 
 .flex-col {
@@ -352,31 +331,39 @@ th {
 }
 
 .border {
-    border-radius: 4px;
+    border-radius: .25rem;
 }
 
 .gap-col-4 {
-    column-gap: 4px;
+    column-gap: .25rem;
 }
 
 .gap-col-8 {
-    column-gap: 8px;
+    column-gap: .5rem;
 }
 
 .gap-col-16 {
-    column-gap: 16px;
+    column-gap: 1rem;
+}
+
+.gap-col-32 {
+    column-gap: 2rem;
 }
 
 .gap-row-4 {
-    row-gap: 4px;
+    row-gap: .25rem;
 }
 
 .gap-row-8 {
-    row-gap: 8px;
+    row-gap: .5rem;
 }
 
 .gap-row-16 {
-    row-gap: 16px;
+    row-gap: 1rem;
+}
+
+.gap-row-32 {
+    row-gap: 2rem;
 }
 
 .color-black {
@@ -425,4 +412,33 @@ th {
 
 .color-bg-error {
     background-color: #D90000;
+}
+
+.block {
+    padding: 1rem;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 800px) {
+    .responsive {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .padding {
+        padding: .5rem .25rem;
+    }
 }
