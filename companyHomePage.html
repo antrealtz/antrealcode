@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <main class="flex-col gap-row-32">
+    <main class="flex-col gap-row-64">
         <!-- Overview and goals -->
         <div class="flex-col gap-row-16">
             <div class="flex-col gap-row-8">
@@ -50,12 +50,12 @@
         </div>
 
         <!-- Page title -->
-        <div class="title padding closed" id="title"><h2>AI Art Box</h2></div>
+        <div class="title padding closed" ><h2>AI Art Box</h2></div>
 
         <!-- Navigation -->
-        <nav>
+        <nav class="padding" id="home">
             <li>
-                <a href="#title">Head</a>
+                <a href="#home">Home</a>
             </li>
             <li>
                 <a href="#features">Features</a>
@@ -69,31 +69,30 @@
         </nav>
 
         <!-- Logo -->
-        <div class=".flex-col .gap-row-8 block bg">
-            <div class=".flex-row content">
-                <h1>AI Art Box</h1>
-                <img src="./resources/img/companyHome/logo.png">
+        <div class="logo flex-row gap-col-32 block border color-bg-secondary">
+            <img src="./resources/img/companyHome/logo.png">
+            <div class="content flex-col">
+                <h3>Fostering creativity through quality supplies and community support.</h3>
             </div>
-            <h2>Fostering creativity through quality supplies and community support.</h2>
         </div>
 
         <!-- Features -->
-        <div class="features block" id="features">
+        <div class="features flex-col gap-row-16 block" id="features">
             <h3>Everything you need we have for you</h3>
-            <div class="feature">
-                <div class="content">
+            <div class="featuresList flex-row gap-col-16">
+                <div class="feature flex-col">
                     <div>
                         <img src="./resources/img/companyHome/features-1.png">
                     </div>
                     <h4>Your Creative Arsenal</h4>
                 </div>
-                <div class="content">
+                <div class="feature flex-col">
                     <div>
                         <img src="./resources/img/companyHome/features-2.png">
                     </div>
                     <h4>Crafting Inspiration</h4>
                 </div>
-                <div class="content">
+                <div class="feature flex-col">
                     <div>
                         <img src="./resources/img/companyHome/features-3.png">
                     </div>
@@ -102,16 +101,21 @@
             </div>
         </div>
 
+        <!-- Quote -->
+        <div class="block border color-bg-white">
+            <h3>We blend technology and creativity to redefine art. We empower artists worldwide with innovative AI tools and products. Together, we shape the future of artistic expression. © ChatGPT</h3>
+        </div>
+
         <!-- Team -->
-        <div class="team block bg" id="team">
+        <div class="team block" id="team">
             <h3>AI Team members</h3>
-            <div class="teamList">
-                <div class="member">
+            <div class="teamList flex-row gap-col-16">
+                <div class="member flex-col gap-row-8">
                     <h4>Emily Parker</h4>
                     <div>
                         <img src="./resources/img/companyHome/member-1.png">
                     </div>
-                    <div>
+                    <div class="flex-col gap-row-8">
                         <div class="c">Creative Director</div>
                         <p>Responsible for curating product offerings, overseeing marketing campaigns, and fostering partnerships with artists and suppliers.</p>
                     </div>
@@ -126,32 +130,32 @@
                         <p>Manages inventory, coordinates with suppliers, and ensures timely delivery of art materials to customers.</p>
                     </div>
                 </div> -->
-                <div class="member">
+                <div class="member flex-col gap-row-8">
                     <h4>Sarah Johnson</h4>
                     <div>
                         <img src="./resources/img/companyHome/member-3.png">
                     </div>
-                    <div>
+                    <div class="flex-col gap-row-8">
                         <div class="c">Community Manager</div>
                         <p>Engages with customers on social media platforms, organizes workshops and events, and cultivates a vibrant online community of artists.</p>
                     </div>
                 </div>
-                <div class="member">
+                <div class="member flex-col gap-row-8">
                     <h4>Michael Chen</h4>
                     <div>
                         <img src="./resources/img/companyHome/member-4.png">
                     </div>
-                    <div>
+                    <div class="flex-col gap-row-8">
                         <div class="c">Customer Service Representative</div>
                         <p>Provides personalized assistance to customers, resolves inquiries and concerns, and ensures a seamless shopping experience.</p>
                     </div>
                 </div>
-                <div class="member">
+                <div class="member flex-col gap-row-8">
                     <h4>Olivia Smith</h4>
                     <div>
                         <img src="./resources/img/companyHome/member-5.png">
                     </div>
-                    <div>
+                    <div class="flex-col gap-row-8">
                         <div class="c">Graphic Designer</div>
                         <p>Designs visual assets for promotional materials, website, and packaging, maintaining a consistent brand identity across all platforms.</p>
                     </div>
@@ -159,17 +163,14 @@
             </div>
         </div>
 
-        <!-- Quote -->
-        <div class="block">
-            <h3>We blend technology and creativity to redefine art. We empower artists worldwide with innovative AI tools and products. Together, we shape the future of artistic expression. © ChatGPT</h3>
-        </div>
-
         <!-- Contacts -->
-        <div class="c" id="contacts">
-            AI Art Box<br>
-            Email: info@aiartbox.com<br>
-            Phone: +1 (555) 123-4567<br>
-            Address: 123 Main Street, Cityville, State, Zip Code<br>
+        <div class="c block border color-bg-white" id="contacts">
+            <span>
+                AI Art Box contact information:<br>
+                Email: info@aiartbox.com<br>
+                Phone: +1 (555) 123-4567<br>
+                Address: 123 Main Street, Cityville, State, Zip Code<br>
+            </span>
         </div>
     </main>
 

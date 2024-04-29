@@ -1,15 +1,3 @@
-html {
-    font-size: 16px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-}
-
 nav {
     display: inline-flex;
     justify-content: center;
@@ -21,37 +9,69 @@ a {
     cursor: pointer;
 }
 
-.block {
-    padding: 4rem;
-}
-
 .bg {
-    background-color: white;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
 }
 
 /* Logo */
 
 .logo {
+    align-items: center;
+    gap: 1rem;
 }
 
-.logo .content {
-    width: 16rem;
-    flex-shrink: 0;
+.logo img {
+    height: 128px;
+    border: 1px solid black;
 }
+
+.content {
+    width: 100%;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+    .logo {
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .feature {
+        flex-direction: column !important;
+    }
+}
+
 
 /* Features */
 
 .features {
-    display: block;
     text-align: center;
     margin: 0 auto;
 }
 
-.features .feature {
+.features .featuresList {
     margin-top: 2rem;
     display: inline-flex;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.feature {
+    width: 100%;
+}
+
+.feature img {
+    width: 100%;
+    max-width: 24rem;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 720px) {
+    .featuresList {
+        flex-direction: column;
+        gap: 2rem !important;
+    }
 }
 
 /* Team */
@@ -64,11 +84,22 @@ a {
 .team .teamList {
     margin-top: 2rem;
     display: inline-flex;
-    width: 100%;
-    gap: 2rem;
 }
 
-.team .teamList .member {
-    height: 100%;
-    width: auto;
+.member {
+    width: 100%;
+}
+
+.member img {
+    width: 100%;
+    max-width: 24rem;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 720px) {
+    .team .teamList {
+        display: flex;
+        flex-direction: column !important;
+        row-gap: 2rem;
+    }
 }

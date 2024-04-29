@@ -334,6 +334,8 @@ th {
     border-radius: .25rem;
 }
 
+/* Gap column */
+
 .gap-col-4 {
     column-gap: .25rem;
 }
@@ -350,6 +352,13 @@ th {
     column-gap: 2rem;
 }
 
+.gap-col-64 {
+    column-gap: 4rem;
+}
+
+
+/* Gap row */
+
 .gap-row-4 {
     row-gap: .25rem;
 }
@@ -364,6 +373,10 @@ th {
 
 .gap-row-32 {
     row-gap: 2rem;
+}
+
+.gap-row-64 {
+    row-gap: 4rem;
 }
 
 .color-black {
@@ -415,7 +428,7 @@ th {
 }
 
 .block {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .responsive {
@@ -423,7 +436,7 @@ th {
     flex-direction: row;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 720px) {
     .responsive {
         display: flex;
         flex-direction: column !important;
@@ -438,7 +451,7 @@ th {
         flex-direction: column;
     }
 
-    .padding {
-        padding: .5rem .25rem;
+    .block {
+        padding: 1rem !important;
     }
 }
