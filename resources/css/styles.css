@@ -162,7 +162,9 @@ h4 {
 /* Career Path */
 
 .career {
+
     max-width: 100%;
+    min-width: 50%;
 }
 
 .fixed {
@@ -208,7 +210,7 @@ h4 {
 
 .challenges {
     align-items: flex-start;
-    min-width: 50%;
+    max-width: 100%;
 }
 
 .arrow {
@@ -493,5 +495,13 @@ th {
 
     .block {
         padding: 1rem !important;
+    }
+
+    .col-to-row {
+        row-gap: 2rem;
+    }
+
+    .row-to-col {
+        column-gap: 2rem;
     }
 }
