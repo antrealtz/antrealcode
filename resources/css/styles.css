@@ -246,7 +246,7 @@ h4 {
     fill: #0075FF;
 }
 
-.closed {
+.unavailable {
     border: 1px dashed black;
 }
 
@@ -315,11 +315,6 @@ th {
 
 /* Variables */
 
-.padding {
-    box-sizing: border-box;
-    padding: 1rem 1.25rem;
-}
-
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -356,6 +351,10 @@ th {
     column-gap: 4rem;
 }
 
+.gap-col-80 {
+    column-gap: 5rem;
+}
+
 
 /* Gap row */
 
@@ -378,6 +377,44 @@ th {
 .gap-row-64 {
     row-gap: 4rem;
 }
+
+.gap-row-80 {
+    row-gap: 5rem;
+}
+
+
+/* Paddings */
+
+.padding {
+    box-sizing: border-box;
+    padding: 1rem 1.25rem;
+}
+
+.padding-top-4 {
+    padding-top: .25rem;
+}
+
+.padding-top-8 {
+    padding-top: .5rem;
+}
+
+.padding-top-16 {
+    padding-top: 1rem;
+}
+
+.padding-top-32 {
+    padding-top: 2rem;
+}
+
+.padding-top-64 {
+    padding-top: 4rem;
+}
+
+.padding-top-80 {
+    padding-top: 5rem;
+}
+
+/* Colors */
 
 .color-black {
     color: black;
@@ -402,6 +439,9 @@ th {
 .color-error {
     color: #D90000;
 }
+
+
+/* Colors background */
 
 .color-bg-black {
     background-color: black;
