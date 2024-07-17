@@ -47,9 +47,9 @@ html {
 }
 
 body {
-    padding: 24px;
-    margin: 0px auto;
-    max-width: 928px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    max-width: 58rem;
 }
 
 main {
@@ -67,8 +67,8 @@ footer {
 header {
     display: flex;
     flex-direction: row;
-    padding: 0px;
-    gap: 32px;
+    padding: 0;
+    gap: 2rem;
     height: fit-content;
 }
 
@@ -101,49 +101,49 @@ a {
 p {
     margin: 0;
     font-family: 'Roboto', Tahoma, Verdana, sans-serif;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1rem;
+    line-height: 1.375rem;
     font-weight: 400;
     letter-spacing: 0.048em;
 }
 
 h1 {
-    font-size: 48px;
-    line-height: 64px;
+    font-size: 3rem;
+    line-height: 4rem;
     font-weight: 700;
     letter-spacing: -0.02em;
 }
 
 h2 {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
     font-weight: 700;
 }
 
 h3 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 700;
     letter-spacing: 0.02em;
 }
 
 h4 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 400;
     letter-spacing: 0.02em;
 }
 
 .c {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: .75rem;
+    line-height: 1.125rem;
 }
 
 .u {
     text-decoration: underline;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: .75rem;
+    line-height: 1.125rem;
     font-weight: 400;
 }
 
@@ -156,13 +156,14 @@ h4 {
 .breadcrumbs {
     display: flex;
     flex-direction: row;
-    column-gap: 8px;
+    column-gap: .5rem;
 }
 
 /* Career Path */
 
 .career {
-
+    position: sticky;
+    top: 1.5rem;
     max-width: 100%;
     min-width: 50%;
 }
@@ -178,7 +179,7 @@ h4 {
 }
 
 .careerCaption {
-    height: 24px;
+    height: 1.5rem;
 }
 
 .careerProf {
@@ -192,14 +193,14 @@ h4 {
 
 .studentName {
     font-family: 'Space Mono', 'Courier New', Courier, monospace;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 2rem;
 }
 
 .codecademy {
-    width: 125px;
-    height: 27px;
+    width: 7.8125rem;
+    height: 1.6875rem;
 }
 
 .codecademy:hover {
@@ -214,8 +215,8 @@ h4 {
 }
 
 .arrow {
-    width: 16px;
-    height: 12px;
+    width: 1rem;
+    height: .75rem;
 }
 
 .arrowBox {
@@ -223,8 +224,8 @@ h4 {
     align-items: center;
     justify-content: center;
     transform: rotate(90deg);
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .challengeList {
@@ -253,19 +254,19 @@ h4 {
 }
 
 .challengeTitle {
-    min-height: 88px;
+    min-height: 5.5rem;
     text-align: left;
 }
 
 .challengeCaption {
-    max-width: 520px;
-    height: 24px;
+    max-width: 32.5rem;
+    height: 1.5rem;
 }
 
 table {
     justify-content: stretch;
     width: 100%;
-    margin: 0px auto;
+    margin: 0 auto;
     border: 1px solid black;
 }
 
@@ -273,7 +274,7 @@ th,
 td {
     padding: 1rem 1.25rem;
     width: auto;
-    min-width: 140px;
+    min-width: 8.75rem;
     text-align: left;
 }
 
@@ -285,7 +286,7 @@ th {
 /* Design system */
 
 .lineLeft {
-    width: 328px;
+    width: 20.5rem;
 }
 
 .lineRight {
@@ -503,5 +504,11 @@ th {
 
     .row-to-col {
         column-gap: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    html {
+        font-size: 32px;
     }
 }
