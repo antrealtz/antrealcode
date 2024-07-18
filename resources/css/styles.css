@@ -47,6 +47,7 @@ html {
 }
 
 body {
+    display: flex;
     padding: 1.5rem;
     margin: 0 auto;
     max-width: 58rem;
@@ -231,6 +232,7 @@ h4 {
 .challengeList {
     align-items: center;
     stroke: black;
+    user-select: none;
 }
 
 .challengeList:hover {
@@ -320,12 +322,12 @@ th {
 
 .flex-col {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
 .flex-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
 }
 
 .border {

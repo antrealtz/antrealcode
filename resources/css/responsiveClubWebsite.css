@@ -1,6 +1,5 @@
 html {
     background: #000;
-    width: 100%;
     font-size: 16px;
 }
 
@@ -11,19 +10,100 @@ html {
     min-width: 50%;
 }
 
-.club h2,
-.club h4,
-.club h3,
-.club h1,
-.club a,
-.club {
+/* h2,
+h4,
+h3,
+h1,
+a {
     color: #e4dede;
-}
+} */
 
 header {
+    display: flex;
+    flex-direction: column;
     background-color: #FAF6ED;
-    width: 100%;
+    gap: 0;
+}
+
+header .club {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: fit-content;
+    width: 58rem;
+    align-self: center;
+}
+
+.hidden {
+    padding: 0 !important;
+}
+
+button {
+    display: flex;
+    align-self: center;
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #0075FF;
+}
+
+#spoilerContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+#spoilerContainer ul {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    list-style: none;
+    height: 1rem;
+}
+
+ul li > p {
+    display: flex;
+    align-self: center;
+    padding: .5rem 1rem;
+    margin: .5rem 0 !important;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+ul li > p:hover {
+    color: #FFB800;
+}
+
+#spoilerContent {
+    max-height: 0;
+    overflow: hidden;
+    row-gap: 2rem;
+    transition: max-height 0.5s ease-out;
+}
+
+.spoiler {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-self: center;
+    row-gap: 2rem;
+}
+
+#mainContent {
     padding: 2rem;
+    color: white;
 }
 
 body {
