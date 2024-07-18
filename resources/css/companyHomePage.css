@@ -63,6 +63,7 @@ a {
 
 .feature {
     width: 100%;
+    justify-content: center;
 }
 
 .feature img {
@@ -103,7 +104,14 @@ a {
 @media only screen and (max-width: 720px) {
     .team .teamList {
         display: flex;
-        flex-direction: column !important;
+        flex-wrap: wrap;
         row-gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .member h4,
+    .feature h4 {
+        max-width: 9.75rem;
     }
 }

@@ -1,0 +1,33 @@
+html {
+    background: #000;
+    width: 100%;
+    font-size: 16px;
+}
+
+.career {
+    position: sticky;
+    top: 1.5rem;
+    max-width: 100%;
+    min-width: 50%;
+}
+
+.club h2,
+.club h4,
+.club h3,
+.club h1,
+.club a,
+.club {
+    color: #e4dede;
+}
+
+header {
+    background-color: #FAF6ED;
+    width: 100%;
+    padding: 2rem;
+}
+
+body {
+    width: 100%;
+    max-width: none;
+    padding: unset;
+}
