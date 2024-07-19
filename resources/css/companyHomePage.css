@@ -54,6 +54,10 @@ a {
     margin: 0 auto;
 }
 
+.features h4 {
+    height: 100%;
+}
+
 .features .featuresList {
     margin-top: 2rem;
     display: inline-flex;
@@ -64,11 +68,12 @@ a {
 .feature {
     width: 100%;
     justify-content: center;
+    gap: 1rem;
 }
 
 .feature img {
     width: 100%;
-    max-width: 24rem;
+    max-width: 16rem;
     border: 1px solid black;
 }
 
@@ -76,29 +81,58 @@ a {
     .featuresList {
         flex-direction: column;
         gap: 2rem !important;
+        flex-wrap: wrap;
     }
 }
 
 /* Team */
 
 .team {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.team .teamList {
+.teamList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    justify-content: center;
     margin-top: 2rem;
-    display: inline-flex;
+    max-width: 40rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+.team h4 {
+    height: fit-content;
+    align-content: end;
 }
 
 .member {
     width: 100%;
+    max-width: 20rem; /* Maximum width for each item */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.member:nth-child(2n)::after {
+    content: '';
+    flex-basis: 100%;
+    width: 0;
+    height: 0;
 }
 
 .member img {
     width: 100%;
-    max-width: 24rem;
     border: 1px solid black;
+}
+
+/* Ensures that each row has at least 2 items and no single item in a row */
+@media (max-width: 30rem) {
+    .teamList {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -106,12 +140,5 @@ a {
         display: flex;
         flex-wrap: wrap;
         row-gap: 2rem;
-    }
-}
-
-@media only screen and (max-width: 960px) {
-    .member h4,
-    .feature h4 {
-        max-width: 9.75rem;
     }
 }
