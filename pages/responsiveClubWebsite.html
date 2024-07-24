@@ -10,7 +10,7 @@
         <title>Responsive Club Website | antrealcode</title>
     </head>
 
-    <body class="flex-col gap-row-32">
+    <body class="flex-col">
         <div id="spoilerContainer">
             <header id="spoilerContent" class="hidden">
                 <div class="spoiler">
@@ -52,50 +52,122 @@
                 </div>
             </header>
             <ul>
-                <li><button id="spoilerButton"><p class="c">path</p></button></li>
-                <li style="border-right: 1px white solid;"></li>
-                <li><p class="c">Benefits</p></li>
-                <li><p class="c">Classes<p></li>
-                <li><p class="c">Trainings</p></li>
+                <li><a href="#home" class="c">Pedal Smart</a></li>
+                <li class="empty"> </li>
+                <li class="link"><a href="#about" class="c">About</a></li>
+                <li><a href="#ai" class="c">AI</a></li>
+                <li class="link"><a href="#benefits" class="c">Benefits</a></li>
+                <li class="link"><a href="#paths" class="c">Paths</a></li>
+                <li><a href="#rides" class="c">Rides</a></li>
+                <li class="empty"> </li>
+                <li>
+                    <button id="spoilerButton">
+                        <p class="c">career</p>
+                    </button>
+                </li>
             </ul>
-
         </div>
 
-
-        <main id="mainContent" class="flex-col gap-row-32" style="height: 50rem;">
-            <!-- Overview and goals -->
-            <div class="flex-col gap-row-16">
-                <div class="flex-col gap-row-8">
-                    <h3>Overview</h3>
-                    <p>This project is slightly different than others you have encountered thus far on Codecademy. Instead of a step-by-step tutorial, this project contains a series of open-ended requirements which describe the project you’ll be building. There are many possible ways to correctly fulfill all of these requirements, and you should expect to use the Internet, Codecademy, and other resources when you encounter a problem that you cannot easily solve. ​</p>
-                </div>
-                <div class="flex-col gap-row-8">
-                    <h3>Project Goals</h3>
-                    <p>In this project, you’ll be using flexbox to design and build the layout for a company’s homepage. You can choose to build a new homepage for an existing company or imagine your own dream company! ​</p>
+        <main class="flex-col">
+            <div id="home" class="header">
+                <div class="flex-col text">
+                    <h1>Pedal Smart</h1>
+                    <p>Ride with Passion, Power, and Purpose!</p>
                 </div>
             </div>
 
-            <nav>
-                <ul>
-                    <li><h3>PulseFit AI</h3></li>
-                </ul>
-            </nav>
+            <div id="about" class="width padding-top-32">
+                <div class="flex-col text gap-row-32">
+                    <h2 class="color-black color-bg-white">About Us</h2>
+                    <p>
+                        Welcome to the AI Cyclists Club! We are a community of bicycle enthusiasts who harness the power of artificial intelligence to enhance our riding experience. Whether you're a casual rider or a seasoned cyclist, our club offers a unique blend of technology and passion for cycling. Join us as we explore new paths, improve our performance, and ride smarter together!
+                    </p>
+                </div>
+            </div>
 
-            <div>
-                <p>Slogan: "Empower Your Fitness with Intelligence"</p>
-                <p>Phrase: "Your Smart Fitness Journey Begins Here"</p>
-                <p>In collaboration with Boxed Water is Better</p>
-                <p>Welcome to PulseFit AI<br>
-                At PulseFit AI, we revolutionize the fitness experience by integrating cutting-edge artificial intelligence with state-of-the-art gym facilities. Our mission is to empower individuals on their fitness journey by offering personalized, data-driven training plans and real-time feedback, ensuring that every workout is effective and enjoyable.<br>
-                Our AI technology analyzes your fitness goals, current performance, and preferences to create customized workout routines that evolve with you. Whether you’re a beginner looking to get started or an athlete striving to reach new heights, PulseFit AI adapts to your needs, providing expert guidance and motivation.<br>
-                Join our vibrant community where innovation meets dedication, and take the first step towards a smarter, healthier you. At PulseFit AI, we’re not just a gym – we’re your partner in achieving lifelong fitness and wellness.</p>
+            <div id="ai" class="width">
+                <div class="flex-col text gap-row-32">
+                    <h2 class="color-black color-bg-white">How AI Can Be Used <br>While Riding Bicycles</h2>
+                    <div class="flex-col gap-row-16">
+                        <div>
+                            <h3>Performance Monitoring</h3>
+                            <p>Use AI-powered apps to track your speed, distance, and heart rate in real-time</p>
+                        </div>
+                        <div>
+                            <h3>Route Optimization</h3>
+                            <p>AI can suggest the best routes based on traffic, weather, and road conditions</p>
+                        </div>
+                        <div>
+                            <h3>Safety Features</h3>
+                            <p>Advanced AI systems can detect potential hazards on your path and alert you immediately</p>
+                        </div>
+                        <div>
+                            <h3>Social Connectivity</h3>
+                            <p>Stay connected with fellow riders, share your routes, and compete in friendly challenges</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="benefits" class="width">
+                <div class="flex-col text gap-row-32">
+                    <h2 class="color-black color-bg-white">Benefits of Being in the Club</h2>
+                    <div class="flex-col gap-row-16">
+                        <div>
+                            <h3>Enhanced Performance</h3>
+                            <p>Utilize AI tools to monitor and improve your cycling performance</p>
+                        </div>
+                        <div>
+                            <h3>Safety First</h3>
+                            <p>Enjoy peace of mind with AI-driven safety alerts and route planning</p>
+                        </div>
+                        <div>
+                            <h3>Community Support</h3>
+                            <p>Connect with like-minded cyclists and participate in club events and challenges</p>
+                        </div>
+                        <div>
+                            <h3>Exclusive Content</h3>
+                            <p>Access to members-only resources, tips, and AI integration tutorials</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="paths" class="width">
+                <div class="flex-col text gap-row-32">
+                    <h2 class="color-black color-bg-white">Ride Paths</h2>
+                    <p>The club offers walking events for Catalonia: from the selskiy trope to the nearest walkers. It is expected that the company plans its work on the intellectual by taking care of specific questions for all users.</p>
+                </div>
+            </div>
+
+            <div id="rides" class="width">
+                <div class="flex-col text gap-row-32">
+                    <h2 class="color-black color-bg-white">Types of Rides</h2>
+                    <div class="flex-col gap-row-16">
+                        <div>
+                            <h3>Leisure Rides <span class="c color-secondary">Every Saturday - ave Saint Cathrine - 11am</span></h3>
+                            <p>Relaxed pace rides perfect for enjoying the scenery and socializing</p>
+                        </div>
+                        <div>
+                            <h3>Fitness Rides <span class="c color-secondary">Every Sunday -  rue Plomondon - 9am </span></h3></h3>
+                            <p>Focus on improving your stamina and speed with guided AI workouts</p>
+                        </div>
+                        <div>
+                            <h3>Adventure Rides <span class="c color-secondary">First Sunday of the month - ave Sherbrook - 10am</span></h3></h3>
+                            <p>Explore new and exciting paths with AI-optimized routes</p>
+                        </div>
+                        <div>
+                            <h3>Competitive Rides <span class="c color-secondary">Last Sunday of the month - ave Sherbrook - 10am</span></h3></h3>
+                            <p>Test your skills against fellow club members in friendly competitions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fin" class="width">
+                <h2 class="text color-black color-bg-white">Join the AI Cyclists Club today and revolutionize your cycling journey!</h2>
             </div>
         </main>
-
-        <footer>
-            <p class="c">Copyright © 2024 AI Art Box. All rights reserved.</p>
-        </footer>
-
         <script src="../resources/js/spoiler.js"></script>
     </body>
 </html>

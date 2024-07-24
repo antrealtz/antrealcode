@@ -1,21 +1,37 @@
 html {
-    background: #000;
+    background-color: #000;
+    scroll-behavior: smooth;
 }
 
-.career {
-    position: sticky;
-    top: 1.5rem;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     max-width: 100%;
-    min-width: 50%;
+    padding: unset;
 }
 
-/* h2,
-h4,
-h3,
-h1,
-a {
-    color: #e4dede;
-} */
+.text {
+    box-sizing: border-box;
+    max-width: 61rem;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+}
+
+.width {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* Spoiler */
 
 header {
     display: flex;
@@ -55,18 +71,58 @@ button:hover {
 #spoilerContainer {
     display: flex;
     flex-direction: column;
-    position: relative;
-    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     transition: max-height 0.5s ease-out;
+    background-color: none;
+    backdrop-filter: blur(5px);
 }
+
+/* #spoilerContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    overflow: visible;
+    filter: blur(10px);
+    z-index: 1;
+} */
 
 #spoilerContainer ul {
     display: flex;
     flex-direction: row;
     align-self: center;
-    justify-content: center;
+    justify-content: space-around;
     list-style: none;
+    padding: unset;
+    height: 3rem;
+    width: 100%;
+    max-width: 40rem;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul li a {
+    color: white;
+}
+
+ul li.empty {
     height: 1rem;
+    align-self: center;
+    border-right: 1px #ffffff80 solid;
+}
+
+ul li p.logo {
+    width: 100%;
+    color: white !important;
 }
 
 ul li > p {
@@ -88,34 +144,129 @@ ul li > p:hover {
 #spoilerContent {
     max-height: 0;
     overflow: hidden;
-    row-gap: 2rem;
+    z-index: 2;
     transition: max-height 0.5s ease-out;
 }
 
 .spoiler {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
     align-self: center;
     row-gap: 2rem;
     box-sizing: border-box;
     width: 100%;
+    max-width: 61rem;
+    padding: 1.5rem;
 }
 
-#mainContent {
-    padding: 2rem;
-    color: white;
-}
 
-body {
+
+
+
+
+
+
+
+
+
+
+
+/* Main content */
+
+main {
     width: 100%;
-    max-width: none;
-    padding: unset;
+    color: white;
+    align-items: center;
+}
+
+main div.header {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1511994298241-608e28f14fde?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+    background-size: cover;
+    background-position: bottom;
+    justify-content: center;
+    align-items: end;
+    padding: 2rem;
+    width: 100%;
+}
+
+main > div {
+    height: 100vh;
+    align-items: center;
+}
+
+main .header div.text {
+    align-items: start;
+    padding: 1.5rem;
+    gap: 1rem;
+    width: fit-content;
+    align-self: flex-end;
+    justify-content: start;
+}
+
+main #about {
+    background: url('https://images.unsplash.com/photo-1540299265498-c41433d9a1c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+    background-size: cover;
+    background-position: center;
+}
+
+main #ai {
+    background: url('https://images.unsplash.com/photo-1541282593580-5342a080b927?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+    background-size: cover;
+    background-position: center;
+}
+
+main #benefits {
+    background: url('https://images.unsplash.com/photo-1670750463932-5761855c6ff3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+    background-size: cover;
+    background-position: center;
+    text-align: end;
+}
+
+main #paths {
+    background: url('https://images.unsplash.com/photo-1488401318902-f7feae66db20?q=80&w=2104&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+    background-size: cover;
+    background-position: center;
+}
+
+main #rides {
+    background: url('https://images.unsplash.com/photo-1636625464579-5759d224d279?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+    background-size: cover;
+    background-position: center;
+}
+
+main #fin {
+    background: url('https://images.unsplash.com/photo-1515164084382-4ac60f929e06?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+    background-size: cover;
+    background-position: center;
+}
+
+main #fin h2 {
+    text-align: center;
+}
+
+main #about div {
+    align-items: center;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+div h2 {
+    padding: 0.5rem;
 }
 
 @media only screen and (max-width: 720px) {
     header .club {
         display: flex;
         flex-direction: column;
+    }
+
+    .career,
+    ul li.link {
+        display: none;
     }
 }

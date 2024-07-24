@@ -41,6 +41,7 @@
 /* Basics */
 
 html {
+    box-sizing: border-box;
     background: #FAF6ED;
     width: 100%;
     font-size: 16px;
@@ -143,9 +144,14 @@ h4 {
 
 .u {
     text-decoration: underline;
+    cursor: pointer;
     font-size: .75rem;
     line-height: 1.125rem;
     font-weight: 400;
+}
+
+.u:hover {
+    color: #0075FF;
 }
 
 .title {
@@ -481,6 +487,19 @@ th {
     flex-direction: row;
 }
 
+
+@media only screen and (min-width: 2160px) {
+    html {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    html {
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width: 720px) {
     html {
         font-size: 14px;
@@ -514,17 +533,5 @@ th {
 
     .row-to-col {
         column-gap: 2rem;
-    }
-}
-
-@media only screen and (min-width: 1920px) {
-    html {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (min-width: 2160px) {
-    html {
-        font-size: 28px;
     }
 }
