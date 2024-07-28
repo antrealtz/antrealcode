@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./resources/css/normalize.min.css">
         <link rel="stylesheet" href="../resources/css/styles.css" type="text/css">
         <link rel="stylesheet" href="../resources/css/responsiveClubWebsite.css" type="text/css">
         <link rel="shortcut icon" href="../resources/img/favicon_io/favicon.ico" type=”image/x-icon”>
@@ -11,10 +12,11 @@
     </head>
 
     <body class="flex-col">
-        <div id="spoilerContainer">
-            <header id="spoilerContent" class="hidden">
-                <div class="spoiler">
-                    <div class="club">
+        <div id="spoilerContainer" class="flex-col">
+            <!-- Spoiler -->
+            <header id="spoilerContent" class="flex-col">
+                <div class="spoiler flex-col gap-row-32">
+                    <div class="flex-row gap-row-32 gap-col-32">
                         <div class="career flex-col gap-row-16">
                             <div class="careerTitle flex-col gap-row-16 padding border color-bg-black">
                                 <div class="careerCaption c">Career path</div>
@@ -39,25 +41,26 @@
                         </div>
                     </div>
                     <!-- Overview and goals -->
-                    <div class="flex-col gap-row-16 club">
-                    <div class="flex-col gap-row-8">
-                        <h3>Overview</h3>
-                        <p>This project is slightly different than others you have encountered thus far on Codecademy. Instead of a step-by-step tutorial, this project contains a series of open-ended requirements which describe the project you’ll be building. There are many possible ways to correctly fulfill all of these requirements, and you should expect to use the Internet, Codecademy, and other resources when you encounter a problem that you cannot easily solve. ​​</p>
-                    </div>
-                    <div class="flex-col gap-row-8">
-                        <h3>Project Goals</h3>
-                        <p>In this project, you’ll be building your own club group page that will dynamically respond as you adjust the size of your screen! ​​</p>
-                    </div>
+                    <div class="flex-col gap-row-16">
+                        <div class="flex-col gap-row-8">
+                            <h3>Overview</h3>
+                            <p>This project is slightly different than others you have encountered thus far on Codecademy. Instead of a step-by-step tutorial, this project contains a series of open-ended requirements which describe the project you’ll be building. There are many possible ways to correctly fulfill all of these requirements, and you should expect to use the Internet, Codecademy, and other resources when you encounter a problem that you cannot easily solve. ​​</p>
+                        </div>
+                        <div class="flex-col gap-row-8">
+                            <h3>Project Goals</h3>
+                            <p>In this project, you’ll be building your own club group page that will dynamically respond as you adjust the size of your screen! ​​</p>
+                        </div>
                     </div>
                 </div>
             </header>
-            <ul>
+            <!-- Navigation -->
+            <ul class="flex-row">
                 <li><a href="#home" class="c">Wheel Smart</a></li>
                 <li class="empty"> </li>
-                <li class="link"><a href="#about" class="c">About</a></li>
+                <li class="wideScreen"><a href="#about" class="c">About</a></li>
                 <li><a href="#ai" class="c">AI</a></li>
-                <li class="link"><a href="#benefits" class="c">Benefits</a></li>
-                <li class="link"><a href="#paths" class="c">Paths</a></li>
+                <li class="wideScreen"><a href="#benefits" class="c">Benefits</a></li>
+                <li class="wideScreen"><a href="#paths" class="c">Paths</a></li>
                 <li><a href="#rides" class="c">Rides</a></li>
                 <li class="empty"> </li>
                 <li>
@@ -69,22 +72,23 @@
         </div>
 
         <main class="flex-col">
-            <div id="home" class="width animated scroll">
-                <div class="flex-col text blur">
+            <!-- Header -->
+            <div id="home" class="background justify-center animated">
+                <div class="flex-col text gap-row-16 blur">
                     <h1>RIDE WITH WHEEL SMART</h1>
                     <p>Embrace the Freedom of Every Path</p>
                 </div>
             </div>
-
-            <div id="about" class="width scroll padding-top-32">
+            <!-- About us -->
+            <div id="about" class="background justify-center">
                 <div class="flex-col text gap-row-16">
                     <h2 class="color-black color-bg-white">About Us</h2>
                     <p class="blur padding">We are a community of bicycle enthusiasts who harness the power of artificial intelligence to enhance our riding experience. Whether you're a casual rider or a seasoned cyclist, our club offers a unique blend of technology and passion for cycling. Join us as we explore new paths, improve our performance, and ride smarter together
                     </p>
                 </div>
             </div>
-
-            <div id="ai" class="width scroll">
+            <!-- AI -->
+            <div id="ai" class="background justify-left">
                 <div class="flex-col text gap-row-16">
                     <h2 class="color-black color-bg-white">Using Ai <br>While Riding Bicycles</h2>
                     <div class="flex-col gap-row-4">
@@ -107,8 +111,8 @@
                     </div>
                 </div>
             </div>
-
-            <div id="benefits" class="width scroll">
+            <!-- Benefits -->
+            <div id="benefits" class="background justify-right">
                 <div class="flex-col text gap-row-16">
                     <h2 class="color-black color-bg-white">Being in the Club</h2>
                     <div class="flex-col gap-row-4">
@@ -131,46 +135,46 @@
                     </div>
                 </div>
             </div>
-
-            <div id="paths" class="width scroll">
+            <!-- Paths -->
+            <div id="paths" class="background justify-left">
                 <div class="flex-col text gap-row-16">
                     <h2 class="color-black color-bg-white">Ride Paths</h2>
                     <p class="blur padding">Discover endless cycling adventures with us! Whether you're exploring bustling city streets, navigating through serene suburban trails, conquering rugged mountain paths, or enjoying the tranquility of forest routes, our cycling paths offer something for every rider. Join us and experience the freedom to ride anywhere and everywhere your heart desires.</p>
                 </div>
             </div>
-
-            <div id="rides" class="width scroll">
+            <!-- Ride types -->
+            <div id="rides" class="background justify-right">
                 <div class="flex-col text gap-row-16">
                     <h2 class="color-black color-bg-white">Types of Rides</h2>
                     <div class="flex-col gap-row-4">
                         <div class="blur padding">
                             <h3>Leisure Rides</h3>
                             <p>Relaxed pace rides perfect for enjoying the scenery and socializing</p>
-                            <p class="c color-secondary"><b>Every Saturday</b> - ave Saint Cathrine</p>
+                            <p class="c color-secondary"><b>Every Saturday</b> - ave Saint Catherine</p>
                         </div>
                         <div class="blur padding">
                             <h3>Fitness Rides</h3>
                             <p>Focus on improving your stamina and speed with guided AI workouts</p>
-                            <p class="c color-secondary"><b>Every Sunday</b> - rue Plomondon</p>
+                            <p class="c color-secondary"><b>Every Sunday</b> - ave Victoria</p>
                         </div>
                         <div class="blur padding">
                             <h3>Adventure Rides</h3>
                             <p>Explore new and exciting paths with AI-optimized routes</p>
-                            <p class="c color-secondary"><b>First Sunday of the month</b> - ave Sherbrook</p>
+                            <p class="c color-secondary"><b>First Sunday of the month</b> - ave Sherbrooke</p>
                         </div>
                         <div class="blur padding">
                             <h3>Competitive Rides</h3>
                             <p>Test your skills against fellow club members in friendly competitions</p>
-                            <p class="c color-secondary"><b>Last Sunday of the month</b> - ave Sherbrook</p>
+                            <p class="c color-secondary"><b>Last Sunday of the month</b> - ave Sherbrooke</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div id="fin" class="flex-col width animated">
+            <!-- Join -->
+            <div id="join" class="background flex-col animated">
                 <div class="flex-col text gap-row-16">
                     <h2 class="color-black color-bg-white">Join the AI Cyclists Club today and revolutionize your cycling journey!</h2>
-                    <p class="blur padding">All images from <a href="https://unsplash.com" target="_blank" title="Free Images and Pictures">unsplash.com</span></p></a>
+                    <p class="blur padding">All images from <a href="https://unsplash.com" target="_blank" title="Free Images and Pictures">unsplash.com</a></p>
                 </div>
             </div>
         </main>

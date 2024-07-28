@@ -38,7 +38,32 @@
     font-style: italic;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Basics */
+
+html {
+    box-sizing: border-box;
+  }
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 html {
     box-sizing: border-box;
@@ -48,10 +73,9 @@ html {
 }
 
 body {
-    display: flex;
     padding: 1.5rem;
-    margin: 0 auto;
     max-width: 58rem;
+    margin: 0 auto;
 }
 
 main {
@@ -83,17 +107,12 @@ a:hover {
     color: #0075FF;
 }
 
-h4,
-h3,
-h2,
-h1,
-a {
+h4, h3, h2, h1, a {
     margin: 0;
     font-family: 'Space Mono', 'Courier New', Courier, monospace;
 }
 
-.c,
-.u {
+.c, .u {
     margin: 0;
     font-family: 'Space Mono', 'Courier New', Courier, monospace;
     text-transform: uppercase;
@@ -166,6 +185,18 @@ h4 {
     column-gap: .5rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Career Path */
 
 .career {
@@ -218,7 +249,7 @@ h4 {
 
 .challenges {
     align-items: flex-start;
-    max-width: 100%;
+    width: 100%;
 }
 
 .arrow {
@@ -324,7 +355,17 @@ th {
     letter-spacing: 0.12em;
 }
 
-/* Variables */
+
+
+
+
+
+
+
+
+
+
+
 
 .flex-col {
     display: flex;
@@ -451,7 +492,6 @@ th {
     color: #D90000;
 }
 
-
 /* Colors background */
 
 .color-bg-black {
@@ -482,23 +522,17 @@ th {
     padding: 2rem;
 }
 
-.responsive {
-    display: flex;
-    flex-direction: row;
-}
 
 
-@media only screen and (min-width: 2160px) {
-    html {
-        font-size: 28px;
-    }
-}
 
-@media only screen and (min-width: 1920px) {
-    html {
-        font-size: 20px;
-    }
-}
+
+
+
+
+
+
+
+/* Media */
 
 @media only screen and (max-width: 720px) {
     html {
@@ -533,5 +567,17 @@ th {
 
     .row-to-col {
         column-gap: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 2160px) {
+    html {
+        font-size: 28px;
     }
 }
