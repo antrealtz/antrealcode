@@ -1,6 +1,6 @@
 document.getElementById('spoilerButton').addEventListener('click', function() {
-    var spoilerContainer = document.getElementById('spoilerContainer');
-    var spoilerContent = document.getElementById('spoilerContent');
+    let spoilerContainer = document.getElementById('spoilerContainer');
+    let spoilerContent = document.getElementById('spoilerContent');
     if (spoilerContent.style.maxHeight) {
         spoilerContent.style.maxHeight = null;
         spoilerContainer.style.maxHeight = null;

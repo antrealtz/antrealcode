@@ -17,10 +17,6 @@ body {
 
 /* Spoiler */
 
-header {
-    background-color: #FAF6ED;
-}
-
 #spoilerContainer {
     position: fixed;
     width: 100%;
@@ -40,6 +36,7 @@ header {
 }
 
 #spoilerContent {
+    background-color: #FAF6ED;
     max-height: 0;
     overflow: hidden;
     z-index: 2;
@@ -71,6 +68,10 @@ ul .empty {
     border-right: 1px #ffffff80 solid;
 }
 
+ul a {
+    color: #fff;
+}
+
 button {
     display: flex;
     align-self: center;
@@ -90,27 +91,6 @@ button:hover {
 
 
 
-
-/* Components */
-
-a {
-    color: #fff;
-}
-
-.justify-left {
-    display: flex;
-    justify-content: left;
-}
-
-.justify-right {
-    display: flex;
-    justify-content: right;
-}
-
-.justify-center {
-    display: flex;
-    justify-content: center;
-}
 
 
 
