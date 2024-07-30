@@ -21,7 +21,7 @@ const compareGuesses = (human, computer, target) => {
     const humanDistance = getAbsoluteDistance(num, target);
     const computerDistance = getAbsoluteDistance(computer, target);
 
-    console.log(`Human Distance: ${humanDistance}, Computer Distance: ${computerDistance}`);
+    console.log(`1. Human Distance: ${humanDistance}, Computer Distance: ${computerDistance}`);
 
     if (isNaN(num)) {
         alert('Write a valid number');
@@ -32,6 +32,11 @@ const compareGuesses = (human, computer, target) => {
         alert('Your guess is out of range. Write a number between 0 and 9');
         return undefined;
     };
+
+    if (isNaN(humanDistance) || isNaN(computerDistance)) {
+        return undefined;
+    }
+    console.log(`2. Human Distance: ${humanDistance}, Computer Distance: ${computerDistance}`);
 
     const result = humanDistance <= computerDistance ? true : false;
     console.log(`Result of compareGuesses: ${result}`);
@@ -54,5 +59,4 @@ const updateScore = (value) => {
 const advanceRound = () => {
     currentRoundNumber++;
     console.log(`Advancing Round: Current Round Number - ${currentRoundNumber}`);
-    console.log('-------------------------------------------------')
 }

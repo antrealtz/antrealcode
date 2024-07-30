@@ -64,7 +64,13 @@ guessButton.addEventListener('click', () => {
 
 nextRoundButton.addEventListener('click', () => {
 	// Increase the round number
-	advanceRound();
+	// advanceRound();
+    if (humanGuessInput.value > 0 && humanGuessInput.value < 9) {
+        advanceRound();
+        console.log(`--- It's advance`)
+    } else {
+        console.log(`--- It's retry`)
+    }
 
 	// Display the new round number
 	roundNumberDisplay.innerText = currentRoundNumber;
