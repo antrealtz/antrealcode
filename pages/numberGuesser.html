@@ -70,60 +70,64 @@
             </div>
         </div>
         <!-- Button -->
-        <button id="spoilerButton">
+        <button id="spoilerButton" class="button">
             <p class="c">career</p>
         </button>
     </div>
-    <div class="game-container">
+    <div id="game-container" class="game-container flex-col gap-row-32 padding fade-in-out show">
         <header>
             <h1>Number Guesser!</h1>
         </header>
 
-        <div class="rounds">
-            <p class="round-label">Round <span id="round-number">1</span></p>
-            <p class="guess-label">Target Number: <span id="target-number">?</span></p>
+        <div class="rounds flex-col gap-row-16">
+            <h3 class="round-label color-bg-black color-secondary padding border">Round <span id="round-number">1</span></h3>
+            <h2 class="guess-label">Random Number: <span id="target-number">?</span></h2>
         </div>
 
-        <div class="guessing-area">
-            <div class="guess computer-guess">
+        <div class="guessing-area gap-col-16 gap-row-16">
+            <div class="guess computer-guess flex-col gap-row-16 color-black title unavailable">
                 <div class="guess-title">
-                    <p class="guess-label">Computer</p>
-                    <p class="score-label">Score: <span id="computer-score">0</span></p>
+                    <h4 class="guess-label">Computer</h4>
+                    <p class="c score-label">Score: <span id="computer-score">0</span></p>
                 </div>
-                <p id="computer-guess">?</p>
-                <p class="winning-text" id="computer-wins"></p>
+                <h2 id="computer-guess">?</h2>
+                <p class="c winning-text padding" id="computer-wins"> </p>
             </div>
-            <div class="guess human-guess">
+            <div class="guess human-guess flex-col title">
                 <div class="guess-title">
-                    <p class="guess-label">You</p>
-                    <p class="score-label">Score: <span id="human-score">0</span></p>
+                    <h4 class="guess-label">You</h4>
+                    <p class="c score-label">Score: <span id="human-score">0</span></p>
                 </div>
                 <input type="number" id="human-guess" min=0 max=9 value=0>
                 <div class="number-controls">
                     <button class="number-control left" id="subtract" disabled>-</button>
                     <button class="number-control right" id="add">+</button>
                 </div>
-                <button class="button" id="guess">Make a Guess</button>
+                <button class="c button padding" id="guess">
+                    <p class="c">Make a Guess</p>
+                </button>
             </div>
         </div>
 
         <div class="next-round-container">
-            <button class="button" id="next-round" disabled>Next Round</button>
+            <button class="button padding" id="next-round" disabled>
+                <p class="c">Next Round</p>
+            </button>
         </div>
 
     </div>
 
-    <div class="instructions">
-        <div class="instruction">
-            <h3>Step 1</h3>
+    <div id="instructions" class="instructions flex-row gap-col-32 justify-center color-bg-black color-white fade-in-out show">
+        <div class="instruction flex-col gap-row-8">
+            <h3 class="color-secondary">Step 1</h3>
             <p>Input a number between 0 and 9</p>
         </div>
-        <div class="instruction">
-            <h3>Step 2</h3>
+        <div class="instruction flex-col gap-row-8">
+            <h3 class="color-secondary">Step 2</h3>
             <p>Click "Make a Guess" to submit your guess and see who won the round.</p>
         </div>
-        <div class="instruction">
-            <h3>Step 3</h3>
+        <div class="instruction flex-col gap-row-8">
+            <h3 class="color-secondary">Step 3</h3>
             <p>Click "Next Round" to play again.</p>
         </div>
     </div>

@@ -60,3 +60,43 @@ const advanceRound = () => {
     currentRoundNumber++;
     console.log(`Advancing Round: Current Round Number - ${currentRoundNumber}`);
 }
+
+const toggleButton = document.getElementById('spoilerButton');
+const gameContainer = document.getElementById('game-container');
+const instructions = document.getElementById('instructions');
+
+toggleButton.addEventListener('click', () => {
+    if (toggleButton.classList.contains('off')) {
+        // Showing
+        toggleButton.classList.remove('off');
+        toggleButton.classList.add('on');
+        gameContainer.classList.remove('hide');
+        gameContainer.classList.add('show');
+        instructions.classList.remove('hide');
+        instructions.classList.add('show');
+        // Display
+        gameContainer.style.display = 'flex';
+        instructions.style.display = 'flex';
+    } else {
+        // Hiding
+        toggleButton.classList.remove('on');
+        toggleButton.classList.add('off');
+        gameContainer.classList.remove('show');
+        gameContainer.classList.add('hide');
+        instructions.classList.remove('show');
+        instructions.classList.add('hide');
+        // Display
+        gameContainer.addEventListener('transitionend', function handleTransitionEnd(event) {
+            if (event.propertyName === 'opacity') {
+                gameContainer.style.display = 'none';
+                gameContainer.removeEventListener('transitionend', handleTransitionEnd);
+            }
+        });
+        instructions.addEventListener('transitionend', function handleTransitionEnd(event) {
+            if (event.propertyName === 'opacity') {
+                instructions.style.display = 'none';
+                instructions.removeEventListener('transitionend', handleTransitionEnd);
+            }
+        });
+    }
+});

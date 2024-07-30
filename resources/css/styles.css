@@ -374,12 +374,12 @@ th {
 
 .flex-col {
 	display: flex;
-	flex-direction: column !important;
+	flex-direction: column;
 }
 
 .flex-row {
 	display: flex;
-	flex-direction: row !important;
+	flex-direction: row;
 }
 
 .border {
@@ -582,10 +582,12 @@ th {
 	}
 
 	.col-to-row {
+        flex-direction: row;
 		row-gap: 2rem;
 	}
 
 	.row-to-col {
+        flex-direction: column;
 		column-gap: 2rem;
 	}
 }
