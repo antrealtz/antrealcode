@@ -224,7 +224,7 @@ input[type=number]::-webkit-inner-spin-button {
     padding: 1.5rem;
 }
 
-button {
+#spoilerButton {
     display: flex;
     align-self: center;
     padding: .5rem 1rem;
@@ -234,6 +234,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#spoileButton:hover {
     color: #0075FF;
 }

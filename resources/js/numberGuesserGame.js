@@ -27,13 +27,24 @@ guessButton.addEventListener('click', () => {
 
 	// Determine if the human or computer wins:
 	const humanIsWinner = compareGuesses(currentHumanGuess, computerGuess, target)
-	const winner = humanIsWinner ? 'human' : 'computer'
+	// const winner = humanIsWinner ? 'human' : 'computer'
+    const winner = () => {
+        if (isNaN(humanIsWinner)) {
+            return undefined
+        } else if (humanIsWinner) {
+            return 'human'
+        } else {
+            return 'computer'
+        }
+    }
 
 	// Update the correct score:
-	updateScore(winner);
+	updateScore(winner());
 
 	// Display the winner
-	if (humanIsWinner) {
+	if (isNaN(humanIsWinner)) {
+        undefined;
+    } else if (humanIsWinner) {
 		guessButton.innerText = 'You Win!!!!!';
 		guessButton.classList.toggle('winning-text')
 	} else {
@@ -54,6 +65,7 @@ guessButton.addEventListener('click', () => {
 nextRoundButton.addEventListener('click', () => {
 	// Increase the round number
 	advanceRound();
+
 	// Display the new round number
 	roundNumberDisplay.innerText = currentRoundNumber;
 
