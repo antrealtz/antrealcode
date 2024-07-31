@@ -65,12 +65,13 @@ const toggleButton = document.getElementById('spoilerButton');
 const game = document.getElementById('game');
 
 toggleButton.addEventListener('click', () => {
-    // Remove existing transition end listener to avoid multiple bindings
     game.removeEventListener('transitionend', handleTransitionEnd);
 
     if (toggleButton.classList.contains('off')) {
         // Displaying
-        game.style.display = 'flex'; // Make sure it's displayed before starting the fade-in
+        game.style.display = 'flex';
+
+        game.offsetHeight; // Force reflow
 
         // Showing
         requestAnimationFrame(() => {
@@ -99,7 +100,7 @@ toggleButton.addEventListener('click', () => {
     // Handle the transition end event
     function handleTransitionEnd(event) {
         if (event.propertyName === 'opacity' && game.classList.contains('hide')) {
-            game.style.display = 'none'; // Hide display after fade-out completes
+            game.style.display = 'none';
         }
     }
 });
