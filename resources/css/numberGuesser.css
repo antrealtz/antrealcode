@@ -8,7 +8,6 @@ body {
     height: 100%;
 	margin: 0 auto;
 	padding: unset;
-    justify-content: space-between;
 }
 
 .game-container {
@@ -16,7 +15,6 @@ body {
 	margin: 0 auto;
 	text-align: center;
     user-select: none;
-    transition: all .2s ease;
 }
 
 header {
@@ -285,6 +283,8 @@ input[type="number"] {
 
 #game {
     flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
     transition: opacity 0.5s ease-in-out;
 }
 
