@@ -62,41 +62,44 @@ const advanceRound = () => {
 }
 
 const toggleButton = document.getElementById('spoilerButton');
-const gameContainer = document.getElementById('game-container');
-const instructions = document.getElementById('instructions');
+const game = document.getElementById('game');
 
 toggleButton.addEventListener('click', () => {
+    // Remove existing transition end listener to avoid multiple bindings
+    game.removeEventListener('transitionend', handleTransitionEnd);
+
     if (toggleButton.classList.contains('off')) {
+        // Displaying
+        game.style.display = 'flex'; // Make sure it's displayed before starting the fade-in
+
         // Showing
+        requestAnimationFrame(() => {
+            game.classList.remove('hide');
+            game.classList.add('show');
+        });
+
+        // Button career
         toggleButton.classList.remove('off');
         toggleButton.classList.add('on');
-        gameContainer.classList.remove('hide');
-        gameContainer.classList.add('show');
-        instructions.classList.remove('hide');
-        instructions.classList.add('show');
-        // Display
-        gameContainer.style.display = 'flex';
-        instructions.style.display = 'flex';
+        toggleButton.textContent = 'career';
     } else {
         // Hiding
+        game.classList.remove('show');
+        game.classList.add('hide');
+
+        // Waiting until animation ends
+        game.addEventListener('transitionend', handleTransitionEnd);
+
+        // Button result
         toggleButton.classList.remove('on');
         toggleButton.classList.add('off');
-        gameContainer.classList.remove('show');
-        gameContainer.classList.add('hide');
-        instructions.classList.remove('show');
-        instructions.classList.add('hide');
-        // Display
-        gameContainer.addEventListener('transitionend', function handleTransitionEnd(event) {
-            if (event.propertyName === 'opacity') {
-                gameContainer.style.display = 'none';
-                gameContainer.removeEventListener('transitionend', handleTransitionEnd);
-            }
-        });
-        instructions.addEventListener('transitionend', function handleTransitionEnd(event) {
-            if (event.propertyName === 'opacity') {
-                instructions.style.display = 'none';
-                instructions.removeEventListener('transitionend', handleTransitionEnd);
-            }
-        });
+        toggleButton.textContent = 'result';
+    }
+
+    // Handle the transition end event
+    function handleTransitionEnd(event) {
+        if (event.propertyName === 'opacity' && game.classList.contains('hide')) {
+            game.style.display = 'none'; // Hide display after fade-out completes
+        }
     }
 });

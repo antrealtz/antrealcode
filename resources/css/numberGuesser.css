@@ -1,7 +1,14 @@
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+
 body {
     max-width: none;
+    height: 100%;
 	margin: 0 auto;
 	padding: unset;
+    justify-content: space-between;
 }
 
 .game-container {
@@ -219,30 +226,8 @@ input[type="number"] {
     padding: 1.5rem;
 }
 
-#spoilerButton {
-    position: relative;
-    display: flex;
-    align-self: center;
-    padding: .5rem 1rem;
-    margin: .5rem 0;
-    border: none;
-    cursor: pointer;
-    background-color: unset !important;
-    color: black;
-}
-
-#spoilerButton.off {
-    position: relative;
-    display: flex;
-    align-self: center;
-    padding: .5rem 1rem;
-    margin: .5rem 0;
-    border: none;
-    cursor: pointer;
-    background-color: unset !important;
-    color: black;
-}
-
+#spoilerButton,
+#spoilerButton.off,
 #spoilerButton.on {
     position: relative;
     display: flex;
@@ -253,6 +238,10 @@ input[type="number"] {
     cursor: pointer;
     background-color: unset !important;
     color: black;
+}
+
+#spoilerButton:hover {
+    color: #0075FF;
 }
 
 #spoilerButton::before {
@@ -267,12 +256,21 @@ input[type="number"] {
 }
 
 #spoilerButton.off::before {
-    border-top: 2px #FFB800 solid;
-    overflow: hidden;
+    border-bottom: 4px #FFB800 solid;
 }
 
-#spoilerButton:hover::before {
-    transform: scale(1.2);
+#spoilerButton.off:hover::before {
+    transform: scaleX(2);
+    border-bottom: 4px #0075FF solid;
+}
+
+#spoilerButton.on::before {
+    border-top: 4px #FFB800 solid;
+}
+
+#spoilerButton.on:hover::before {
+    transform: scaleX(2);
+    border-top: 4px #0075FF solid;
 }
 
 
@@ -285,18 +283,20 @@ input[type="number"] {
 
 /* Animations */
 
-.fade-in-out {
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
+#game {
+    flex-direction: column;
+    transition: opacity 0.5s ease-in-out;
 }
 
-.fade-in-out.show {
+.hide {
+    opacity: 0;
+}
+
+.show {
     opacity: 1;
+    display: flex;
 }
 
-.fade-in-out.hide {
-    opacity: 0;
-}
 
 
 
