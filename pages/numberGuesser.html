@@ -70,9 +70,7 @@
             </div>
         </div>
         <!-- Button -->
-        <button id="spoilerButton" class="c button on">
-            <p class="c">career</p>
-        </button>
+        <button id="spoilerButton" class="c button on">career</button>
     </div>
 
     <div id="game" class="show">
@@ -99,23 +97,19 @@
                 <div class="guess human-guess flex-col title">
                     <div class="guess-title">
                         <h4 class="guess-label">You</h4>
-                        <p class="c score-label">Score: <span id="human-score">1</span></p>
+                        <p class="c score-label">Score: <span id="human-score">0</span></p>
                     </div>
                     <input type="number" id="human-guess" min=0 max=9 value=0>
                     <div class="number-controls">
                         <button class="number-control left" id="subtract" disabled>-</button>
                         <button class="number-control right" id="add">+</button>
                     </div>
-                    <button class="c button padding" id="guess">
-                        <p class="c">Make a Guess</p>
-                    </button>
+                    <button id="guess" class="c button padding">Make a Guess</button>
                 </div>
             </div>
 
             <div class="next-round-container">
-                <button class="button padding" id="next-round" disabled>
-                    <p class="c">Next Round</p>
-                </button>
+                <button id="next-round" class="c button padding" disabled>Next Round</button>
             </div>
 
         </div>
