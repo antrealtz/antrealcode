@@ -78,7 +78,7 @@ header {
 }
 
 #human-guess {
-    width: 6rem;
+    width: 5.25rem;
     border: 1px solid #0075FF;
 }
 
@@ -92,18 +92,21 @@ header {
 }
 
 .number-controls {
-	font-size: 0;
+    display: flex;
 	margin-bottom: 1.5rem;
 }
 
 .number-control {
-	border: solid 1px #0075FF;
+    border: unset;
 	display: inline-block;
-	width: 3rem;
+	width: 2.5rem;
 	height: 2rem;
 	font-size: 1.5rem;
-	color: #0075FF;
-	cursor: pointer;
+}
+
+.number-control:hover {
+    background-color: #0075FF;
+    color: white;
 }
 
 .number-controls button[disabled] {
@@ -138,61 +141,58 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-#game-container .button[disabled] {
-    background-color: unset;
-	cursor: default;
-}
 
 #game-container .button {
-    display: inline-block;
     position: relative;
-    color: white;
+    color: black;
 	cursor: pointer;
-    border: unset;
     z-index: 1;
+    background-color: unset;
+    border: 1px #0075FF solid;
+}
+
+#game-container .button:hover {
+    color: #0075FF;
+}
+
+#game-container .button:active {
+    color: transparent;
 }
 
 #game-container .button::before {
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 4px;
     background-color: #0075FF;
-    transition: all .2s ease-in-out;
-    z-index: -1;
+    transition: height .2s ease;
+    z-index: 0;
 }
 
 #game-container .button:hover::before {
-    transform: scaleX(1.2);
+    height: 0px;
 }
 
+#game-container .button[disabled] {
+	cursor: default;
+    border: 1px #FFB800 solid;
+    color: unset;
+}
 
-#guess.button[disabled]::before {
-    content: '';
-    position: absolute;
+#game-container .button[disabled]::before {
     background-color: unset;
+}
+
+#guess.button[disabled] {
+    border: unset;
+    color: transparent;
 }
 
 #next-round.button {
     margin: 0 auto;
 	margin-bottom: 2rem;
-    background-color: unset;
-}
-
-#next-round.button[disabled] {
-    background-color: white;
-    color: black;
-}
-
-#next-round.button[disabled]::before {
-    background-color: white !important;
-    border: 1px #0075FF solid;
-}
-
-#next-round.button[disabled]:hover::before {
-    transform: none;
 }
 
 .instructions {
