@@ -80,13 +80,14 @@
             </header>
 
             <div class="rounds flex-col gap-row-16">
-                <h3 class="round-label color-bg-black color-secondary padding border">Round <span
-                        id="round-number">1</span></h3>
+                <h3 class="round-label color-bg-black color-secondary padding border">Round
+                    <span id="round-number">1</span>
+                </h3>
                 <h2 class="guess-label">Target Number: <span id="target-number">?</span></h2>
             </div>
 
             <div class="guessing-area gap-col-16 gap-row-16">
-                <div class="guess computer-guess flex-col gap-row-16 color-black title unavailable">
+                <div class="guess computer-guess flex-col color-black title unavailable">
                     <div class="guess-title">
                         <h4 class="guess-label">Computer</h4>
                         <p class="c score-label">Score: <span id="computer-score">0</span></p>
@@ -99,10 +100,13 @@
                         <h4 class="guess-label">You</h4>
                         <p class="c score-label">Score: <span id="human-score">0</span></p>
                     </div>
-                    <input type="number" id="human-guess" min=0 max=9 value=0>
-                    <div class="number-controls gap-col-4">
-                        <button class="c button number-control left" id="subtract" disabled>-</button>
-                        <button class="c button number-control right" id="add">+</button>
+                    <h2 id="human-guess" style="display: none;">4</h2>
+                    <div id="number-container" class="flex-col">
+                        <input type="number" id="human-guess-input" min=0 max=9 value=0>
+                        <div class="number-controls gap-col-4">
+                            <button class="c button number-control left" id="subtract" disabled>-</button>
+                            <button class="c button number-control right" id="add">+</button>
+                        </div>
                     </div>
                     <button id="guess" class="c button padding">Make a Guess</button>
                 </div>

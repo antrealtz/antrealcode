@@ -1,14 +1,18 @@
 let target;
 
-const humanGuessInput = document.getElementById('human-guess');
+const humanGuessInput = document.getElementById('human-guess-input');
 
 const roundNumberDisplay = document.getElementById('round-number');
 
 const computerGuessDisplay = document.getElementById('computer-guess');
+const humanGuessDisplay = document.getElementById('human-guess');
+
 const humanScoreDisplay = document.getElementById('human-score');
 const computerScoreDisplay = document.getElementById('computer-score');
 const targetNumberDisplay = document.getElementById('target-number');
 const computerWinsDisplay = document.getElementById('computer-wins');
+
+const numberContainerDisplay = document.getElementById('number-container');
 
 const guessButton = document.getElementById('guess');
 const nextRoundButton = document.getElementById('next-round')
@@ -24,6 +28,7 @@ guessButton.addEventListener('click', () => {
 	// Display the computer guess and the target
 	computerGuessDisplay.innerText = computerGuess;
 	targetNumberDisplay.innerText = target;
+    humanGuessDisplay.innerText = currentHumanGuess;
 
 	// Determine if the human or computer wins:
 	const humanIsWinner = compareGuesses(currentHumanGuess, computerGuess, target)
@@ -37,6 +42,12 @@ guessButton.addEventListener('click', () => {
             return 'computer'
         }
     }
+
+    // Hiding inputs
+    numberContainerDisplay.style.display = 'none';
+
+    // Showing score
+    humanGuessDisplay.style.display = 'block';
 
 	// Update the correct score:
 	updateScore(winner());
@@ -71,6 +82,12 @@ nextRoundButton.addEventListener('click', () => {
     } else {
         console.log(`--- It's retry`)
     }
+
+    // Showing inputs
+    numberContainerDisplay.style.display = 'flex';
+
+    // Hiding score
+    humanGuessDisplay.style.display = 'none';
 
 	// Display the new round number
 	roundNumberDisplay.innerText = currentRoundNumber;
