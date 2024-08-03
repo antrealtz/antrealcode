@@ -71,9 +71,22 @@ guessButton.addEventListener('click', () => {
 	// Set the correct disabled state for the buttons
 	guessButton.setAttribute('disabled', true)
 	nextRoundButton.removeAttribute('disabled');
+
+    // Changes button text
+    if (currentHumanGuess && humanGuessInput.value > 0 && humanGuessInput.value < 9) {
+        nextRoundButton.innerText = 'Next Round';
+    } else {
+        nextRoundButton.innerText = 'Try again';
+    };
 });
 
 nextRoundButton.addEventListener('click', () => {
+
+    // Changes button text
+    if (nextRoundButton) {
+        nextRoundButton.innerText = 'Next Round';
+    }
+
 	// Increase the round number
 	// advanceRound();
     if (humanGuessInput.value > 0 && humanGuessInput.value < 9) {
@@ -81,7 +94,7 @@ nextRoundButton.addEventListener('click', () => {
         console.log(`--- It's advance`)
     } else {
         console.log(`--- It's retry`)
-    }
+    };
 
     // Showing inputs
     numberContainerDisplay.style.display = 'flex';
