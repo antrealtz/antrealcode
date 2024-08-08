@@ -38,6 +38,7 @@ header {
 	height: 20rem;
 	display: flex;
 	flex-direction: column;
+    justify-content: space-between;
 	align-items: center;
 	padding: 1.5rem;
 }
@@ -70,7 +71,6 @@ header {
 
 #computer-guess,
 #human-guess {
-    position: relative;
     top: 2rem;
 	font-size: 4rem;
 	font-weight: 500;
@@ -207,7 +207,6 @@ input[type="number"] {
 .winning-text,
 .winning-text[disabled] {
 	color: #D90000 !important;
-    position: absolute !important;
     bottom: 1.6rem;
 }
 
@@ -333,6 +332,7 @@ input[type="number"] {
 
     .computer-guess {
         height: fit-content;
+        min-height: 14rem;
     }
 
     .instructions {

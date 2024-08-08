@@ -114,7 +114,7 @@ nextRoundButton.addEventListener('click', () => {
 	guessButton.innerText = 'Make a Guess';
 	humanGuessInput.value = '';
 	computerGuessDisplay.innerText = '?';
-	computerWinsDisplay.innerText = '';
+	computerWinsDisplay.innerText = ' ';
 	guessButton.classList.remove('winning-text');
 });
 
