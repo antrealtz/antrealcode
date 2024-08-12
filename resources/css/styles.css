@@ -241,13 +241,18 @@ h4 {
 	line-height: 2rem;
 }
 
-.codecademy {
+#codecademy {
 	width: 7.8125rem;
 	height: 1.6875rem;
 }
 
-.codecademy:hover {
+#codecademy:hover {
 	fill: #0075FF;
+}
+
+#qrcode {
+    width: fit-content;
+    height: 10rem;
 }
 
 /* Challenges */
