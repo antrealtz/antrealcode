@@ -300,6 +300,7 @@ h4 {
 
 .unavailable {
 	border: 1px dashed black;
+    color: gray
 }
 
 .challengeTitle {
