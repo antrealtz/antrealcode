@@ -1,6 +1,7 @@
 html {
     height: 100%;
     overflow-y: scroll;
+    touch-action: manipulation;
 }
 
 body {
@@ -338,5 +339,9 @@ input[type="number"] {
     .instructions {
         flex-direction: column !important;
         align-items: center;
+    }
+    #game-container .button::before,
+    #game-container .button:hover::before {
+        transition: none;
     }
 }
