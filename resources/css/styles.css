@@ -599,12 +599,12 @@ th {
 
 @media only screen and (min-width: 1920px) {
 	html {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
 
 @media only screen and (min-width: 2160px) {
 	html {
-		font-size: 28px;
+		font-size: 24px;
 	}
 }
